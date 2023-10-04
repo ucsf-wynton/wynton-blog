@@ -3,11 +3,19 @@ project:
 
 website:
   title: "The UCSF Wynton Blog"
+
+  site-url: https://blog.wynton.ucsf.edu
+
+  description: "The UCSF Wynton Blog"
+
   navbar:
     right:
       - about.qmd
       - icon: github
         href: https://github.com/ucsf-wynton/wynton-blog
+      - icon: rss
+        href: index.xml
+        
 format:
   html:
     theme: cosmo
