@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/ucsf-wynton/wynton-blog/about.html</loc>
-    <lastmod>2023-09-27T20:46:37.110Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/ucsf-wynton/wynton-blog/posts/welcome/index.html</loc>
-    <lastmod>2023-09-27T20:46:36.490Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/ucsf-wynton/wynton-blog/index.html</loc>
-    <lastmod>2023-09-27T20:46:34.818Z</lastmod>
+    <lastmod>2023-10-04T02:01:04.910Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/ucsf-wynton/wynton-blog/posts/post-with-code/index.html</loc>
-    <lastmod>2023-09-27T20:46:36.818Z</lastmod>
+    <lastmod>2023-10-04T02:01:04.302Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ucsf-wynton/wynton-blog/index.html</loc>
+    <lastmod>2023-10-04T02:01:03.594Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ucsf-wynton/wynton-blog/posts/welcome/index.html</loc>
+    <lastmod>2023-10-04T02:01:04.610Z</lastmod>
   </url>
 </urlset>
