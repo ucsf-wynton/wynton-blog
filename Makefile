@@ -3,7 +3,8 @@ all: check
 check: spelling
 
 preview:
-	quarto preview &
+	quarto preview --port 4444 &
+	xdg-open http://127.0.0.1:4444/
 
 spelling:
 	@echo "$@ ..."

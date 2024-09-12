@@ -1,7 +1,7 @@
 ---
-title: "Announcement: Wynton Reboots 2024-09-12"
+title: "Announcement: Wynton Reboots on 2024-09-12"
 author: "Erik Ellestad"
-date: "2023-09-11T09:10:00"
+date: "2024-09-11T09:10:00"
 categories: [announcement, maintenance]
 ---
 
