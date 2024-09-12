@@ -9,6 +9,7 @@ categories: [announcement, maintenance]
 
 On Thursday, September 12 at 12:30 PM PDT we will be rebooting _all_ Wynton interactive nodes to upgrade the kernel and implement RAM and CPU limits on individual user sessions. To avoid data loss, please logout and save your work before the scheduled reboot.
 
+
 # The Rest of the Story™
 
 To increase the stability of the Wynton dev, login, and data transfer nodes we are implementing CPU and memory limitations for user sessions on those nodes.
@@ -26,3 +27,8 @@ Before the scheduled reboot, to prevent data loss, please save your work and log
 From the Wynton [Website](https://wynton.ucsf.edu/hpc/get-started/development-prototyping.html):
 
 > Although you should always run analyses via the job scheduler, there are times when you may need to develop parts of it interactively at the command-line prompt. For instance, you may need to install some software, a few R packages, or run some quick tests on your new pipeline. Wynton HPC provides development nodes dedicated for such short-term usages and that are configured similarly to the compute nodes. The dev nodes are meant for light interactive work and quick test jobs. Please submit all heavy processing to the cluster via qsub.
+
+
+# Addendum
+
+* 2024-09-12: Jobs on scheduler, queued or running, are _not_ affected by this reboot of interactive nodes.
