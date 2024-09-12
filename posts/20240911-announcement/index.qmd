@@ -24,7 +24,7 @@ To implement these changes _and_ push an update to the Linux kernel, on Thursday
 
 Before the scheduled reboot, to prevent data loss, please save your work and logout of any interactive sessions.
 
-From the Wynton [Website](https://wynton.ucsf.edu/hpc/get-started/development-prototyping.html):
+From the Wynton [website](https://wynton.ucsf.edu/hpc/get-started/development-prototyping.html):
 
 > Although you should always run analyses via the job scheduler, there are times when you may need to develop parts of it interactively at the command-line prompt. For instance, you may need to install some software, a few R packages, or run some quick tests on your new pipeline. Wynton HPC provides development nodes dedicated for such short-term usages and that are configured similarly to the compute nodes. The dev nodes are meant for light interactive work and quick test jobs. Please submit all heavy processing to the cluster via qsub.
 
