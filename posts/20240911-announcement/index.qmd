@@ -1,13 +1,17 @@
 ---
 title: "Announcement: Wynton Reboots on 2024-09-12"
-author: "Erik Ellestad"
+author:
+  - name: Erik Ellestad
+    roles: Wynton SysAdmin
+    affiliations:
+      name: UCSF Wynton HPC Team
 date: "2024-09-11T09:10:00"
 categories: [announcement, maintenance]
 ---
 
 # TLDR
 
-On Thursday, September 12 at 12:30 PM PDT we will be rebooting _all_ Wynton interactive nodes to upgrade the kernel and implement RAM and CPU limits on individual user sessions. To avoid data loss, please logout and save your work before the scheduled reboot.
+On Thursday, September 12 at 12:30 PT we will be rebooting _all_ Wynton interactive nodes to upgrade the kernel and implement RAM and CPU limits on individual user sessions. To avoid data loss, please logout and save your work before the scheduled reboot.
 
 
 # The Rest of the Story™
