@@ -23,7 +23,7 @@
 
 <section id="tldr" class="level1">
 <h1>TLDR</h1>
-<p>On Thursday, September 12 at 12:30 PM PDT we will be rebooting <em>all</em> Wynton interactive nodes to upgrade the kernel and implement RAM and CPU limits on individual user sessions. To avoid data loss, please logout and save your work before the scheduled reboot.</p>
+<p>On Thursday, September 12 at 12:30 PT we will be rebooting <em>all</em> Wynton interactive nodes to upgrade the kernel and implement RAM and CPU limits on individual user sessions. To avoid data loss, please logout and save your work before the scheduled reboot.</p>
 </section>
 <section id="the-rest-of-the-story" class="level1">
 <h1>The Rest of the Story™</h1>
