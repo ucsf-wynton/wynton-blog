@@ -1,7 +1,7 @@
 # The UCSF Wynton Blog
 
-_WARNING: This is blog is not publically available, because it is work
-under construction. It requires GitHub authenatication to access the
+_WARNING: This is blog is not publicly available, because it is work
+under construction. It requires GitHub authentication to access the
 repository and the blog. /2023-10-03_
 
 This is the git repository for <https://blog.wynton.ucsf.edu> blog
