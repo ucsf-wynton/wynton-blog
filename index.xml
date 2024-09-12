@@ -6,16 +6,17 @@
       version="2.0">
 <channel>
 <title>The UCSF Wynton Blog</title>
-<link>https://blog.wynton.ucsf.edu/index.html</link>
+<link>https://blog.wynton.ucsf.edu/</link>
 <atom:link href="https://blog.wynton.ucsf.edu/index.xml" rel="self" type="application/rss+xml"/>
 <description>The UCSF Wynton Blog</description>
-<generator>quarto-1.3.450</generator>
+<generator>quarto-1.5.57</generator>
 <lastBuildDate>Wed, 27 Sep 2023 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Post With Code</title>
   <dc:creator>Harlow Malloc</dc:creator>
-  <link>https://blog.wynton.ucsf.edu/posts/post-with-code/index.html</link>
+  <link>https://blog.wynton.ucsf.edu/posts/post-with-code/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -28,15 +29,16 @@
   <category>news</category>
   <category>code</category>
   <category>analysis</category>
-  <guid>https://blog.wynton.ucsf.edu/posts/post-with-code/index.html</guid>
+  <guid>https://blog.wynton.ucsf.edu/posts/post-with-code/</guid>
   <pubDate>Wed, 27 Sep 2023 00:00:00 GMT</pubDate>
   <media:content url="https://blog.wynton.ucsf.edu/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Welcome To My Blog</title>
   <dc:creator>Tristan O&#39;Malley</dc:creator>
-  <link>https://blog.wynton.ucsf.edu/posts/welcome/index.html</link>
+  <link>https://blog.wynton.ucsf.edu/posts/welcome/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -49,8 +51,44 @@
 
  ]]></description>
   <category>news</category>
-  <guid>https://blog.wynton.ucsf.edu/posts/welcome/index.html</guid>
+  <guid>https://blog.wynton.ucsf.edu/posts/welcome/</guid>
   <pubDate>Sun, 24 Sep 2023 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Announcement: Wynton Reboots 2024-09-12</title>
+  <dc:creator>Erik Ellestad</dc:creator>
+  <link>https://blog.wynton.ucsf.edu/posts/20240911-announcement/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="tldr" class="level1">
+<h1>TLDR</h1>
+<p>On Thursday, September 12 at 12:30 PM PDT we will be rebooting <em>all</em> Wynton interactive nodes to upgrade the kernel and implement RAM and CPU limits on individual user sessions. To avoid data loss, please logout and save your work before the scheduled reboot.</p>
+</section>
+<section id="the-rest-of-the-story" class="level1">
+<h1>The Rest of the Story™</h1>
+<p>To increase the stability of the Wynton dev, login, and data transfer nodes we are implementing CPU and memory limitations for user sessions on those nodes.</p>
+<p>On dev and data transfer nodes, users will be limited to the equivalent of 2 CPUs and user sessions or processes which take more than 96 GiB of the system’s available memory will be killed.</p>
+<p>On login nodes, users will be limited to the equivalent of 1 CPU and user sessions or processes which take more than 32 GiB of the system’s available memory will be killed.</p>
+<p>By introducing these CPU and memory limits, we hope to avoid most of the past traffic jams that have occurred on the interactive nodes. In the past, there was always the risk that a single user process could bring these machines to a standstill and they could become non-responsive, or even cause them to crash. These new limits lower the risk for individual processes overconsuming the CPU and memory, resulting in, what we hope, a smoother ride for everyone using these shared machines.</p>
+<p>To implement these changes <em>and</em> push an update to the Linux kernel, on Thursday, September 12 we will be rebooting all interactive nodes: log1, log2, plog1, dt1, dt2, pdt1, pdt2, dev1, dev2, dev3, pdev1, gpudev1, and pgpudev1.</p>
+<p>Before the scheduled reboot, to prevent data loss, please save your work and logout of any interactive sessions.</p>
+<p>From the Wynton <a href="https://wynton.ucsf.edu/hpc/get-started/development-prototyping.html">Website</a>:</p>
+<blockquote class="blockquote">
+<p>Although you should always run analyses via the job scheduler, there are times when you may need to develop parts of it interactively at the command-line prompt. For instance, you may need to install some software, a few R packages, or run some quick tests on your new pipeline. Wynton HPC provides development nodes dedicated for such short-term usages and that are configured similarly to the compute nodes. The dev nodes are meant for light interactive work and quick test jobs. Please submit all heavy processing to the cluster via qsub.</p>
+</blockquote>
+
+
+</section>
+
+ ]]></description>
+  <category>announcement</category>
+  <category>maintenance</category>
+  <guid>https://blog.wynton.ucsf.edu/posts/20240911-announcement/</guid>
+  <pubDate>Mon, 11 Sep 2023 09:10:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

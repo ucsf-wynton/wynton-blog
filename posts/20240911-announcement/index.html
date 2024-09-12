@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Harlow Malloc">
-<meta name="dcterms.date" content="2023-09-27">
+<meta name="author" content="Erik Ellestad">
+<meta name="dcterms.date" content="2023-09-11">
 
-<title>Post With Code – The UCSF Wynton Blog</title>
+<title>Announcement: Wynton Reboots 2024-09-12 – The UCSF Wynton Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -115,11 +115,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Post With Code</h1>
+      <h1 class="title">Announcement: Wynton Reboots 2024-09-12</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
-                <div class="quarto-category">code</div>
-                <div class="quarto-category">analysis</div>
+                <div class="quarto-category">announcement</div>
+                <div class="quarto-category">maintenance</div>
               </div>
                   </div>
   </div>
@@ -130,14 +129,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Harlow Malloc </p>
+               <p>Erik Ellestad </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 27, 2023</p>
+        <p class="date">September 11, 2023</p>
       </div>
     </div>
     
@@ -156,9 +155,25 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>This is a post with executable code.</p>
+<section id="tldr" class="level1">
+<h1>TLDR</h1>
+<p>On Thursday, September 12 at 12:30 PM PDT we will be rebooting <em>all</em> Wynton interactive nodes to upgrade the kernel and implement RAM and CPU limits on individual user sessions. To avoid data loss, please logout and save your work before the scheduled reboot.</p>
+</section>
+<section id="the-rest-of-the-story" class="level1">
+<h1>The Rest of the Story™</h1>
+<p>To increase the stability of the Wynton dev, login, and data transfer nodes we are implementing CPU and memory limitations for user sessions on those nodes.</p>
+<p>On dev and data transfer nodes, users will be limited to the equivalent of 2 CPUs and user sessions or processes which take more than 96 GiB of the system’s available memory will be killed.</p>
+<p>On login nodes, users will be limited to the equivalent of 1 CPU and user sessions or processes which take more than 32 GiB of the system’s available memory will be killed.</p>
+<p>By introducing these CPU and memory limits, we hope to avoid most of the past traffic jams that have occurred on the interactive nodes. In the past, there was always the risk that a single user process could bring these machines to a standstill and they could become non-responsive, or even cause them to crash. These new limits lower the risk for individual processes overconsuming the CPU and memory, resulting in, what we hope, a smoother ride for everyone using these shared machines.</p>
+<p>To implement these changes <em>and</em> push an update to the Linux kernel, on Thursday, September 12 we will be rebooting all interactive nodes: log1, log2, plog1, dt1, dt2, pdt1, pdt2, dev1, dev2, dev3, pdev1, gpudev1, and pgpudev1.</p>
+<p>Before the scheduled reboot, to prevent data loss, please save your work and logout of any interactive sessions.</p>
+<p>From the Wynton <a href="https://wynton.ucsf.edu/hpc/get-started/development-prototyping.html">Website</a>:</p>
+<blockquote class="blockquote">
+<p>Although you should always run analyses via the job scheduler, there are times when you may need to develop parts of it interactively at the command-line prompt. For instance, you may need to install some software, a few R packages, or run some quick tests on your new pipeline. Wynton HPC provides development nodes dedicated for such short-term usages and that are configured similarly to the compute nodes. The dev nodes are meant for light interactive work and quick test jobs. Please submit all heavy processing to the cluster via qsub.</p>
+</blockquote>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
