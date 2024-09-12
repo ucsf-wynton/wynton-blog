@@ -80,6 +80,12 @@
 <blockquote class="blockquote">
 <p>Although you should always run analyses via the job scheduler, there are times when you may need to develop parts of it interactively at the command-line prompt. For instance, you may need to install some software, a few R packages, or run some quick tests on your new pipeline. Wynton HPC provides development nodes dedicated for such short-term usages and that are configured similarly to the compute nodes. The dev nodes are meant for light interactive work and quick test jobs. Please submit all heavy processing to the cluster via qsub.</p>
 </blockquote>
+</section>
+<section id="addendum" class="level1">
+<h1>Addendum</h1>
+<ul>
+<li>2024-09-12: Jobs on scheduler, queued or running, are <em>not</em> affected by this reboot of interactive nodes.</li>
+</ul>
 
 
 </section>
