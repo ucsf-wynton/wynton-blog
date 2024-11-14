@@ -1,0 +1,301 @@
+/****************************************************************
+/* BOOTSTRAP TWEAKS
+****************************************************************/
+/*--------------------------------------------------------------*
+ * Fixing top navigation bar
+ *--------------------------------------------------------------*/
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.navbar {
+  background-color: #ffdd00;
+  border-color: #dec000;
+  color: #555;
+}
+
+.navbar .navbar-brand {
+  color: #555;
+}
+
+.navbar .navbar-nav > li > a {
+  color: #555;
+}
+
+.navbar .navbar-nav > li > a:focus {
+  color: #000;
+}
+
+.navbar .navbar-nav > li > a:hover {
+  background-color: #e6c700;
+}
+
+.navbar .navbar-nav > .open > a, .navbar .navbar-nav > .open > a:hover {
+  color: #000;
+}
+  
+.navbar .navbar-nav > .active > a:focus {
+  color: #555555;
+  background-color: #dec000;
+}
+
+.navbar .navbar-nav > .open > a:focus {
+  background-color: #dec000;
+}
+
+.navbar .navbar-form {
+  border-color: #dec000;
+}
+
+
+.quarto-title-banner {
+    background-color: #ffdd0033;
+    color: #2d6da3;
+}
+
+a {
+  color: #2d6da3;
+}
+
+
+/*--------------------------------------------------------------*
+ * Sticky footer styles
+ *--------------------------------------------------------------*/
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -20px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 60px;
+}
+#footer {
+  background-color: #ffdd00;  /* UCSF color: Pantone */
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/*--------------------------------------------------------------*
+ * Tables
+ *--------------------------------------------------------------*/
+table {
+  margin: auto;
+  margin-top: 2ex;
+  margin-bottom: 2ex;
+/*
+    min-width: 60%;
+    max-width: 100%;
+*/
+}
+
+tr {
+    vertical-align: top;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+/*    background-color: #5bc0de; */
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+th, td {
+    padding: 0.5ex;
+}
+
+dt {
+  margin-left: 0.5ex;
+}
+
+dt:after { content: ":" }
+
+dd {
+  margin-left: 2.5ex;
+}
+
+tfoot {
+  border-top: 2px solid #000;
+  font-weight: bold;
+}
+
+/*
+ttr:last-child { border-top: 2px solid #f00; }
+*/
+
+
+/*--------------------------------------------------------------*
+ * View as PHI or Non-PHI
+ *--------------------------------------------------------------*/
+.non-phi {
+    display: inline;
+}
+
+.phi {
+    display: none;
+}
+
+
+/*--------------------------------------------------------------*
+ * Custom page CSS
+ *--------------------------------------------------------------*/
+/*
+.container {
+  width: auto;
+  max-width: 680px;
+}
+*/
+.container .credit {
+  margin: 20px 0;
+}
+
+h1 {
+    margin-top: 0px;
+    /* 40px UCSF banner + 56px navbar + 20px for spacing */
+    scroll-margin-top: 116px;
+}
+
+h2, h3, h4, h5, h6 {
+    /* 40px UCSF banner + 56px navbar + 20px for spacing */
+    scroll-margin-top: 116px;
+}
+
+/* https://github.com/allejo/jekyll-anchor-headings */
+.anchor-heading {
+    visibility: hidden;
+}
+
+h1:hover .anchor-heading {
+    visibility: visible;
+}
+
+h2:hover .anchor-heading {
+    visibility: visible;
+}
+
+h3:hover .anchor-heading {
+    visibility: visible;
+}
+
+h4:hover .anchor-heading {
+    visibility: visible;
+}
+
+h5:hover .anchor-heading {
+    visibility: visible;
+}
+
+h6:hover .anchor-heading {
+    visibility: visible;
+}
+
+a:hover, a:focus {
+  font-weight: normal;
+}
+
+code {
+  background: rgb(245, 245, 245); /* Fallback if rgba() is missing */
+  background: rgba(245, 245, 245, .5);
+}
+
+.printonly {
+  display: none;
+}
+
+/* NOTE: Control visibility in dynamics.css */
+.broadcast {
+  margin-left: 0.3ex;
+  font-weight: bold;
+  color: orange;
+  visibility: hidden;
+}
+
+/* NOTE: Control visibility in dynamics.css */
+.status-led {
+    position: relative;
+    left: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    border: #000000 solid 1px;
+    border-radius: 50%;
+    background: red;      /* level = danger         */
+    background: orange;   /* level = warning        */
+    background: #22d828;  /* level = info (default) */
+}
+
+.timestamp {
+  color: #666666;
+}
+
+/*--------------------------------------------------------------*
+ * Custom print layout
+ *--------------------------------------------------------------*/
+@media print { 
+  a, a:after { content: normal !important; }
+
+  #sublogocontainer {
+    display: none;
+  }
+
+  #filler {
+    display: none;
+  }
+
+  #push {
+    display: none;
+  }
+
+  body {
+    height: auto;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  #wrap {
+    position: relative;
+    top: -100px;
+  }
+
+  #footer {
+    position: relative;
+    top: -20px;
+    border-top: 1px solid black;
+  }
+
+  h1.printonly {
+    margin-bottom: 2ex;
+    display: block;
+    padding-bottom: 0.1ex;
+    border-bottom: 1px solid black;
+  }
+
+  span.printonly {
+    display: inline;
+  }
+} /* @media print */

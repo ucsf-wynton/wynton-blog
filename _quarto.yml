@@ -19,8 +19,9 @@ website:
 format:
   html:
     theme: cosmo
-    css: styles.css
-
+    css:
+    - assets/css/this_site.css
+    
 execute:
   freeze: auto
 
