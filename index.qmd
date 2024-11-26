@@ -1,5 +1,5 @@
 ---
-title: "The Wynton Blog"
+title: "The Wynton Blog (prototype only; nothing to see)"
 listing:
   contents: posts
   sort: "date desc"
