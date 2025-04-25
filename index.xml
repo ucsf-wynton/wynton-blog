@@ -10,11 +10,11 @@
 <atom:link href="https://blog.wynton.ucsf.edu/index.xml" rel="self" type="application/rss+xml"/>
 <description>The UCSF Wynton Blog (prototype only - nothing to see)</description>
 <generator>quarto-1.6.43</generator>
-<lastBuildDate>Sun, 01 Sep 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 25 Apr 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Welcome to the Wynton Blog</title>
   <dc:creator>The Wynton Team</dc:creator>
-  <link>https://blog.wynton.ucsf.edu/posts/20240901-welcome/</link>
+  <link>https://blog.wynton.ucsf.edu/posts/20250425-welcome/</link>
   <description><![CDATA[ 
 
 
@@ -28,9 +28,9 @@
 
  ]]></description>
   <category>news</category>
-  <guid>https://blog.wynton.ucsf.edu/posts/20240901-welcome/</guid>
-  <pubDate>Sun, 01 Sep 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://blog.wynton.ucsf.edu/posts/20240901-welcome/ucsf_wynton_logo-black-006699.png" medium="image" type="image/png" height="76" width="144"/>
+  <guid>https://blog.wynton.ucsf.edu/posts/20250425-welcome/</guid>
+  <pubDate>Fri, 25 Apr 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://blog.wynton.ucsf.edu/posts/20250425-welcome/ucsf_wynton_logo-black-006699.png" medium="image" type="image/png" height="76" width="144"/>
 </item>
 </channel>
 </rss>
