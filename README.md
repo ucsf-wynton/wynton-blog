@@ -8,22 +8,27 @@ This is the git repository for <https://blog.wynton.ucsf.edu> blog
 site.  This blog site uses [Quarto].
 
 
-## Edit
+## Install Quarto
 
-To edit the the site locally, use:
+See <https://quarto.org/docs/get-started/> for how to install Quarto
+on your operating system (e.g. Linux, macOS, and Windows).
+
+
+## Preview blog site locally
+
+To render the the site locally, use:
 
 ```sh
 $ cd wynton-blog/
 $ quarto preview
 ```
 
-to open the site in your local web browser.  Then edit the `*.qmd`
+This will open the site in your local web browser. Then edit the `*.qmd`
 file of choice.  Quarto will automatically detect your edits and
 re-render the HTML page whenever you save the file.
 
 When done, commit your edits and push to GitHub.  A GitHub Action job
 will then rerender the site and publish it online.
-
 
 
 [Quarto]: https://quarto.org/
