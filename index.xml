@@ -9,7 +9,7 @@
 <link>https://blog.wynton.ucsf.edu/</link>
 <atom:link href="https://blog.wynton.ucsf.edu/index.xml" rel="self" type="application/rss+xml"/>
 <description>The UCSF Wynton Blog (prototype only - nothing to see)</description>
-<generator>quarto-1.6.37</generator>
+<generator>quarto-1.6.43</generator>
 <lastBuildDate>Wed, 11 Sep 2024 09:10:00 GMT</lastBuildDate>
 <item>
   <title>Announcement: Wynton Reboots on 2024-09-12</title>
@@ -54,47 +54,25 @@
   <pubDate>Wed, 11 Sep 2024 09:10:00 GMT</pubDate>
 </item>
 <item>
-  <title>Post With Code</title>
-  <dc:creator>Harlow Malloc</dc:creator>
-  <link>https://blog.wynton.ucsf.edu/posts/post-with-code/</link>
+  <title>Welcome to the Wynton Blog</title>
+  <dc:creator>The Wynton Team</dc:creator>
+  <link>https://blog.wynton.ucsf.edu/posts/20240901-welcome/</link>
   <description><![CDATA[ 
 
 
 
 
 
-<p>This is a post with executable code.</p>
+<p>Welcome to the <strong>Wynton Blog</strong> – a space for sharing the insights that don’t quite fit within our rigorously vetted documentation. While the main Wynton website will remain the authoritative source for policies, system specifications, and step-by-step instructions that we guarantee are accurate, this blog opens the door to ideas that are still taking shape: quick tips we’ve found handy, early drafts of tutorials, and “rough-edge” discoveries that can help you work smarter on the cluster before they’re polished enough for the official docs.</p>
+<p>We also hope this becomes a forum for the wider Wynton community. If your lab has devised a clever workflow, uncovered a gotcha, or mastered a third-party tool that others might find useful, we’d love to host your guest post. All articles will be labeled with the author and date so you can judge freshness and applicability, and we’ll revise or retire content as it matures – or if it proves wrong. Think of the blog as a living notebook: collaborative, occasionally messy, but always aimed at helping each other push research forward on Wynton. Dive in, share your expertise, and let’s grow together.</p>
 
 
 
  ]]></description>
   <category>news</category>
-  <category>code</category>
-  <category>analysis</category>
-  <guid>https://blog.wynton.ucsf.edu/posts/post-with-code/</guid>
-  <pubDate>Wed, 27 Sep 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://blog.wynton.ucsf.edu/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Welcome To My Blog</title>
-  <dc:creator>Tristan O&#39;Malley</dc:creator>
-  <link>https://blog.wynton.ucsf.edu/posts/welcome/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="https://blog.wynton.ucsf.edu/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
-
-
-
- ]]></description>
-  <category>news</category>
-  <guid>https://blog.wynton.ucsf.edu/posts/welcome/</guid>
-  <pubDate>Sun, 24 Sep 2023 00:00:00 GMT</pubDate>
+  <guid>https://blog.wynton.ucsf.edu/posts/20240901-welcome/</guid>
+  <pubDate>Sun, 01 Sep 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://blog.wynton.ucsf.edu/posts/20240901-welcome/wynton-logo.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>

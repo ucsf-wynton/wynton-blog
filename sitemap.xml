@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.wynton.ucsf.edu/posts/welcome/index.html</loc>
-    <lastmod>2024-11-26T00:00:20.810Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.wynton.ucsf.edu/posts/post-with-code/index.html</loc>
-    <lastmod>2024-11-26T00:00:20.810Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.wynton.ucsf.edu/about.html</loc>
-    <lastmod>2024-11-26T00:00:20.810Z</lastmod>
-  </url>
-  <url>
     <loc>https://blog.wynton.ucsf.edu/index.html</loc>
-    <lastmod>2024-11-26T00:00:20.810Z</lastmod>
+    <lastmod>2025-04-25T15:32:28.163Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.wynton.ucsf.edu/posts/20240901-welcome/index.html</loc>
+    <lastmod>2025-04-25T15:32:28.163Z</lastmod>
   </url>
   <url>
     <loc>https://blog.wynton.ucsf.edu/posts/20240911-announcement/index.html</loc>
-    <lastmod>2024-11-26T00:00:20.810Z</lastmod>
+    <lastmod>2025-04-25T15:32:28.164Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.wynton.ucsf.edu/about.html</loc>
+    <lastmod>2025-04-25T15:32:28.162Z</lastmod>
   </url>
 </urlset>
