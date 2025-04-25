@@ -15,7 +15,10 @@ website:
         href: https://github.com/ucsf-wynton/wynton-blog
       - icon: rss
         href: index.xml
-        
+
+  draft-mode: unlinked
+
+
 format:
   html:
     theme: cosmo
@@ -25,6 +28,7 @@ format:
 execute:
   freeze: auto
 
+draft-mode: unlinked
+
 resources:
   - CNAME
-  
