@@ -201,7 +201,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <section id="tldr" class="level2">
 <h2 class="anchored" data-anchor-id="tldr">TL;DR</h2>
-<p>R 4.5.0 was release on 2025-04-11 and is now available on Wynton throught the <a href="https://wynton.ucsf.edu/hpc/software/software-repositories.html#repository_cbi">CBI</a> software stack. I have validated that nearly all CRAN and Bioconductor packages can be installed with this new version.</p>
+<p>R 4.5.0 was releases on 2025-04-11 and is now available on Wynton through the <a href="https://wynton.ucsf.edu/hpc/software/software-repositories.html#repository_cbi">CBI</a> software stack. I have validated that almost all CRAN and Bioconductor packages can be installed with this new version.</p>
 </section>
 <section id="using-r" class="level2">
 <h2 class="anchored" data-anchor-id="using-r">Using R</h2>
@@ -212,22 +212,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">getRversion</span>()</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">'4.5.0'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>To use R 4.5.0 in RStudio, just follow our our <a href="https://wynton.ucsf.edu/hpc/howto/rstudio.html">RStudio documentation</a>.</p>
+<p>To use R 4.5.0 in RStudio, just follow our <a href="https://wynton.ucsf.edu/hpc/howto/rstudio.html">RStudio documentation</a>.</p>
 </section>
 <section id="re-installing-r-packages" class="level2">
 <h2 class="anchored" data-anchor-id="re-installing-r-packages">Re-installing R packages</h2>
-<p>As usual when we move to a new version (e.g.&nbsp;from R 4.4 to R 4.5), any R packages installed in the previous version (R 4.4) are <em>not</em> available in the new version (R 4.5). This is not the case when we move from one patch version to another, e.g.&nbsp;R 4.5.0 to R 4.5.1. With the release of R 4.5.0 this means we start from scratch again and we have to re-install any packages we need again. So, don’t be surprised when <code>library(dplyr)</code> gives an error on “there is no package called ‘dplyr’”. Also, when installing your first package in a new version of R, R will ask you:</p>
+<p>As usual when we move to a new version (e.g.&nbsp;from R 4.4 to R 4.5), any R packages installed in the previous version (R 4.4) are <em>not</em> available in the new version (R 4.5). This is not the case when we move from one patch version to another, e.g.&nbsp;R 4.5.0 to R 4.5.1. With the release of R 4.5.0 we have to start from scratch and reinstall any packages we need. So, don’t be surprised when <code>library(dplyr)</code> gives an error on “there is no package called ‘dplyr’”. Also, when installing your first package in a new version of R, R will ask you:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">install.packages</span>(<span class="st">"dplyr"</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Warning <span class="cf">in</span> <span class="fu">install.packages</span>(<span class="st">"dplyr"</span>) <span class="sc">:</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">'lib = "/wynton/home/cbi/shared/software/_rocky8/R-4.5.0-gcc13/lib64/R/library"'</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  is not writable</span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>Would you like to use a personal library instead? (yes<span class="sc">/</span>No<span class="sc">/</span>cancel)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Answer <strong>yes</strong> to this and anything else that R asks your to confirm. Doing so will make sure you get a smooth ride when using R. This is all explained in our <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a>.</p>
+<p>Answer <strong>yes</strong> to this and anything else that R asks you to confirm. Doing so will make sure you get a smooth ride when using R. This is all explained in our <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a>.</p>
 </section>
 <section id="validation" class="level2">
 <h2 class="anchored" data-anchor-id="validation">Validation</h2>
 <p>Just as with previous versions of R available via the <a href="https://wynton.ucsf.edu/hpc/software/software-repositories.html#repository_cbi">CBI</a> stack, I have validated that nearly all R packages on <a href="https://cran.r-project.org">CRAN</a> and <a href="https://www.bioconductor.org">Bioconductor</a> can be installed out of the box using this new R 4.5.0 installation.</p>
-<p>Specifically, I have confirmed that 22,??? out of 22,378<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> CRAN packages and 2,??? out of 2,308<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Bioconductor 3.2 packages are straightforward to install. A small number of packages require some extra love - see <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a> how to install those.</p>
+<p>Specifically, I have confirmed that 22,??? out of 22,378<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> CRAN packages and 2,??? out of 2,308<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Bioconductor 3.21 packages are straightforward to install. A small number of packages require some extra love - see our <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a> for guidance on installing those.</p>
 <p>The packages that failed to install do so either because they depend on a system library that is not available on the cluster, or because they have bugs preventing them from being installed out of the box.</p>
 
 
