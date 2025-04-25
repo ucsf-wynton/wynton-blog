@@ -2,8 +2,13 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/20240911-announcement/index.html",
       "/posts/20240901-welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/announcements.html",
+    "items": [
+      "/posts/20240911-announcement/index.html"
     ]
   }
 ]
