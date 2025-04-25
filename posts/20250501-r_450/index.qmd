@@ -12,8 +12,8 @@ draft: true
 
 ## TL;DR
 
-R 4.5.0 was release on 2025-04-11 and is now available on Wynton
-throught the [CBI] software stack. I have validated that nearly all
+R 4.5.0 was releases on 2025-04-11 and is now available on Wynton
+through the [CBI] software stack. I have validated that almost all
 CRAN and Bioconductor packages can be installed with this new version.
 
 
@@ -34,7 +34,7 @@ Then you can run R interactively from the terminal using:
 [1] '4.5.0'
 ```
 
-To use R 4.5.0 in RStudio, just follow our our [RStudio documentation].
+To use R 4.5.0 in RStudio, just follow our [RStudio documentation].
 
 
 ## Re-installing R packages
@@ -43,11 +43,10 @@ As usual when we move to a new version (e.g. from R 4.4 to R 4.5), any
 R packages installed in the previous version (R 4.4) are _not_
 available in the new version (R 4.5). This is not the case when we
 move from one patch version to another, e.g. R 4.5.0 to R 4.5.1. With
-the release of R 4.5.0 this means we start from scratch again and we
-have to re-install any packages we need again. So, don't be surprised
-when `library(dplyr)` gives an error on "there is no package called
-'dplyr'". Also, when installing your first package in a new version of
-R, R will ask you:
+the release of R 4.5.0 we have to start from scratch and reinstall any
+packages we need. So, don't be surprised when `library(dplyr)` gives
+an error on "there is no package called 'dplyr'". Also, when
+installing your first package in a new version of R, R will ask you:
 
 ```r
 > install.packages("dplyr")
@@ -57,7 +56,7 @@ Warning in install.packages("dplyr") :
 Would you like to use a personal library instead? (yes/No/cancel)
 ```
 
-Answer **yes** to this and anything else that R asks your to
+Answer **yes** to this and anything else that R asks you to
 confirm. Doing so will make sure you get a smooth ride when using R.
 This is all explained in our [R documentation].
 
@@ -68,10 +67,11 @@ Just as with previous versions of R available via the [CBI] stack, I
 have validated that nearly all R packages on [CRAN] and [Bioconductor]
 can be installed out of the box using this new R 4.5.0 installation.
 
-Specifically, I have confirmed that 22,??? out of 22,378[^cran-count] CRAN packages
-and 2,??? out of 2,308[^bioc-count] Bioconductor 3.2 packages are
-straightforward to install. A small number of packages require some
-extra love - see [R documentation] how to install those.
+Specifically, I have confirmed that 22,??? out of 22,378[^cran-count]
+CRAN packages and 2,??? out of 2,308[^bioc-count] Bioconductor 3.21
+packages are straightforward to install. A small number of packages
+require some extra love - see our [R documentation] for guidance on
+installing those.
 
 The packages that failed to install do so either because they depend
 on a system library that is not available on the cluster, or because
