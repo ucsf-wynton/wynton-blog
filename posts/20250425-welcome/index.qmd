@@ -1,7 +1,7 @@
 ---
 title: "Welcome to the Wynton Blog"
 author: "The Wynton Team"
-date: "2024-09-01"
+date: "2025-04-25"
 categories: [news]
 image: "ucsf_wynton_logo-black-006699.png"
 ---
