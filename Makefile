@@ -2,13 +2,15 @@ all: check
 
 check: spelling
 
-preview:
+start:
 	quarto preview --port 4444 &
 	xdg-open http://127.0.0.1:4444/
 
 stop:
-	pkill -SIGINT deno
-	pkill -SIGINT quarto
+	pkill -SIGINT deno || true
+	pkill -SIGINT quarto || true
+
+restart: stop start
 
 spelling:
 	@echo "$@ ..."
