@@ -37,7 +37,7 @@ Then you can run R interactively from the terminal using:
 To use R 4.5.0 in RStudio, just follow our [RStudio documentation].
 
 
-## Re-installing R packages
+## Required re-installing R packages
 
 As usual when we move to a new version (e.g. from R 4.4 to R 4.5), any
 R packages installed in the previous version (R 4.4) are _not_
@@ -61,7 +61,7 @@ confirm. Doing so will make sure you get a smooth ride when using R.
 This is all explained in our [R documentation].
 
 
-## You must deactivate Conda to use this R installation
+## Conda must be deactivate when using this R installation
 
 Conda does not play well with other software tools installed on the
 system, especially not with programming tools such as Python and
@@ -105,11 +105,10 @@ and deactivate Conda first, then retry:
 R version 4.5.0 (2025-04-11) -- "How About a Twenty-Six"
 Copyright (C) 2025 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu
-...
 ```
 
 
-## Validation
+## Installation is well validated
 
 Just as with previous versions of R available via the [CBI] stack, I
 have validated that nearly all R packages on [CRAN] and [Bioconductor]
