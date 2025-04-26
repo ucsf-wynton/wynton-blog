@@ -214,8 +214,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">'4.5.0'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>To use R 4.5.0 in RStudio, just follow our <a href="https://wynton.ucsf.edu/hpc/howto/rstudio.html">RStudio documentation</a>.</p>
 </section>
-<section id="re-installing-r-packages" class="level2">
-<h2 class="anchored" data-anchor-id="re-installing-r-packages">Re-installing R packages</h2>
+<section id="required-re-installing-r-packages" class="level2">
+<h2 class="anchored" data-anchor-id="required-re-installing-r-packages">Required re-installing R packages</h2>
 <p>As usual when we move to a new version (e.g.&nbsp;from R 4.4 to R 4.5), any R packages installed in the previous version (R 4.4) are <em>not</em> available in the new version (R 4.5). This is not the case when we move from one patch version to another, e.g.&nbsp;R 4.5.0 to R 4.5.1. With the release of R 4.5.0 we have to start from scratch and reinstall any packages we need. So, don’t be surprised when <code>library(dplyr)</code> gives an error on “there is no package called ‘dplyr’”. Also, when installing your first package in a new version of R, R will ask you:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">install.packages</span>(<span class="st">"dplyr"</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Warning <span class="cf">in</span> <span class="fu">install.packages</span>(<span class="st">"dplyr"</span>) <span class="sc">:</span></span>
@@ -224,8 +224,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>Would you like to use a personal library instead? (yes<span class="sc">/</span>No<span class="sc">/</span>cancel)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Answer <strong>yes</strong> to this and anything else that R asks you to confirm. Doing so will make sure you get a smooth ride when using R. This is all explained in our <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a>.</p>
 </section>
-<section id="you-must-deactivate-conda-to-use-this-r-installation" class="level2">
-<h2 class="anchored" data-anchor-id="you-must-deactivate-conda-to-use-this-r-installation">You must deactivate Conda to use this R installation</h2>
+<section id="conda-must-be-deactivate-when-using-this-r-installation" class="level2">
+<h2 class="anchored" data-anchor-id="conda-must-be-deactivate-when-using-this-r-installation">Conda must be deactivate when using this R installation</h2>
 <p>Conda does not play well with other software tools installed on the system, especially not with programming tools such as Python and R. From experience working with Wynton users, Conda causes more problems for users than any of other software tool on Wynton. When it comes to R, having Conda activated when installing a R package causes that R package to depend on your personal Conda setup. If your Conda setup gets updated later on, which it will, there is a great risk some of your R packages breaks. You will get hard-to-troubleshoot, obscure “library” errors when you try to load those R packages. It is a very tedious task trying to figure out which R package are affected, so they can be re-installed.</p>
 <p>In the past, <code>module load CBI r</code> would <em>warn</em> about these problems, if it detected that Conda is activated. However, some users did not understand the importance of that warning, and some users are unaware that they have Conda activated. Ignoring the warning had no immediate impact, which could lead to thinking that “R seems to work fine with Conda.” Starting with R 4.5.0, <code>module load CBI r</code> will now give an <em>error</em> and refuse to load if Conda is activated, e.g.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">{alice@dev3</span> ~}$ module load CBI r</span>
@@ -243,11 +243,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="ex">{alice@dev3</span> ~}$ R <span class="at">--version</span></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="ex">R</span> version 4.5.0 <span class="er">(</span><span class="ex">2025-04-11</span><span class="kw">)</span> <span class="ex">--</span> <span class="st">"How About a Twenty-Six"</span></span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="ex">Copyright</span> <span class="er">(</span><span class="ex">C</span><span class="kw">)</span> <span class="ex">2025</span> The R Foundation for Statistical Computing</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="ex">Platform:</span> x86_64-pc-linux-gnu</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="ex">Platform:</span> x86_64-pc-linux-gnu</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="validation" class="level2">
-<h2 class="anchored" data-anchor-id="validation">Validation</h2>
+<section id="installation-is-well-validated" class="level2">
+<h2 class="anchored" data-anchor-id="installation-is-well-validated">Installation is well validated</h2>
 <p>Just as with previous versions of R available via the <a href="https://wynton.ucsf.edu/hpc/software/software-repositories.html#repository_cbi">CBI</a> stack, I have validated that nearly all R packages on <a href="https://cran.r-project.org">CRAN</a> and <a href="https://www.bioconductor.org">Bioconductor</a> can be installed out of the box using this new R 4.5.0 installation.</p>
 <p>Specifically, I have confirmed that 22,582 (99.1%) out of 22,371<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> CRAN packages and 2,??? out of 2,308<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Bioconductor 3.21 packages are straightforward to install. A small number of packages require some extra love - see our <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a> for guidance on installing those.</p>
 <p>The 47 CRAN and ?? Bioconductor packages that failed to install do so either because they depend on a system library that is not available on the cluster, or because they have bugs preventing them from being installed out of the box.</p>
