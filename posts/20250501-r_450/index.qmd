@@ -61,21 +61,70 @@ confirm. Doing so will make sure you get a smooth ride when using R.
 This is all explained in our [R documentation].
 
 
+## You must deactivate Conda to use this R installation
+
+Conda does not play well with other software tools installed on the
+system, especially not with programming tools such as Python and
+R. From experience working with Wynton users, Conda causes more
+problems for users than any of other software tool on Wynton.  When it
+comes to R, having Conda activated when installing a R package causes
+that R package to depend on your personal Conda setup. If your Conda
+setup gets updated later on, which it will, there is a great risk some
+of your R packages breaks. You will get hard-to-troubleshoot, obscure
+"library" errors when you try to load those R packages. It is a very
+tedious task trying to figure out which R package are affected, so
+they can be re-installed.
+
+In the past, `module load CBI r` would _warn_ about these problems, if
+it detected that Conda is activated. However, some users did not
+understand the importance of that warning, and some users are unaware
+that they have Conda activated. Ignoring the warning had no immediate
+impact, which could lead to thinking that "R seems to work fine with
+Conda." Starting with R 4.5.0, `module load CBI r` will now give an
+_error_ and refuse to load if Conda is activated, e.g.
+
+```sh
+(base) {alice@dev3 ~}$ module load CBI r
+Lmod has detected the following error: Using the 'r' module when a Conda
+environment is active risks resulting in hard-to-troubleshoot errors due
+to library conflicts. Make sure to deactivate the currently active Conda
+'base' environment before loading this module, e.g. 'conda deactivate'.
+
+(base) {alice@dev3 ~}$ R --version
+-bash: R: command not found
+```
+
+If you experience this, follow the instructions in the error message
+and deactivate Conda first, then retry:
+
+```sh
+(base) {alice@dev3 ~}$ conda deactivate
+{alice@dev3 ~}$ module load CBI r
+
+{alice@dev3 ~}$ R --version
+R version 4.5.0 (2025-04-11) -- "How About a Twenty-Six"
+Copyright (C) 2025 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu
+...
+```
+
+
 ## Validation
 
 Just as with previous versions of R available via the [CBI] stack, I
 have validated that nearly all R packages on [CRAN] and [Bioconductor]
 can be installed out of the box using this new R 4.5.0 installation.
 
-Specifically, I have confirmed that 22,??? out of 22,378[^cran-count]
-CRAN packages and 2,??? out of 2,308[^bioc-count] Bioconductor 3.21
-packages are straightforward to install. A small number of packages
-require some extra love - see our [R documentation] for guidance on
-installing those.
+Specifically, I have confirmed that 22,582 (99.1%) out of
+22,371[^cran-count] CRAN packages and 2,??? out of 2,308[^bioc-count]
+Bioconductor 3.21 packages are straightforward to install. A small
+number of packages require some extra love - see our [R documentation]
+for guidance on installing those.
 
-The packages that failed to install do so either because they depend
-on a system library that is not available on the cluster, or because
-they have bugs preventing them from being installed out of the box.
+The 47 CRAN and ?? Bioconductor packages that failed to install do so
+either because they depend on a system library that is not available
+on the cluster, or because they have bugs preventing them from being
+installed out of the box.
 
 
 [CRAN]: https://cran.r-project.org
