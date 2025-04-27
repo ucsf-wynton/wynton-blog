@@ -126,6 +126,14 @@ install do so either because they depend on a system library that is
 not available on the cluster, or because they have bugs preventing
 them from being installed out of the box.
 
+<!--
+Results per 2025-04-27:
+
+CRAN packages that fail to install: [n=47] adea, bigrquerystorage, cbbinom, clrng, crumble, EMTscore, facmodTS, fangs, FIESTA, FIESTAutils, flint, fluidsynth, gdalraster, gpuR, graphpcor, hypergeo2, image.textlinedetector, interpolation, jack, minired, multibridge, OpenCL, opencv, PathwayVote, pcaL1, PCRA, PortfolioAnalytics, PortfolioOptim, qspray, RationalMatrix, ratioOfQsprays, Rcplex, RcppMeCab, RcppPlanc, resultant, revert, RmecabKo, ROI.plugin.cplex, ROI.plugin.symphony, ROracle, Rpoppler, RQuantLib, Rsymphony, rzmq, surveyvoi, symbolicQspray, weird
+
+Bioconductor packages that fail to install: [n=19] AneuFinder, BiGGR, BulkSignalR, ChemmineOB, cn.farms, CNEr, genoCN, gmapR, gpuMagic, graper, Harshlight, HilbertVisGUI, hypeR, PICS, PING, RbowtieCuda, rsbml, trigger, XNAString
+-->
+
 
 [CRAN]: https://cran.r-project.org
 [Bioconductor]: https://www.bioconductor.org
