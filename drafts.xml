@@ -10,6 +10,215 @@
 <atom:link href="https://blog.wynton.ucsf.edu/drafts.xml" rel="self" type="application/rss+xml"/>
 <description>The UCSF Wynton Blog (prototype only - nothing to see)</description>
 <generator>quarto-1.6.43</generator>
-<lastBuildDate>Sun, 27 Apr 2025 18:04:09 GMT</lastBuildDate>
+<lastBuildDate>Thu, 01 May 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>R 4.5.0 is Available</title>
+  <dc:creator>Henrik Bengtsson</dc:creator>
+  <link>https://blog.wynton.ucsf.edu/posts/20250501-r-450/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="float-right-30">
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="https://blog.wynton.ucsf.edu/posts/20250501-r-450/Rlogo.svg" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="The R Logo"></p>
+</figure>
+</div>
+</div>
+<section id="tldr" class="level2">
+<h2 class="anchored" data-anchor-id="tldr">TL;DR</h2>
+<p>R 4.5.0 was releases on 2025-04-11 and is now available on Wynton through the <a href="https://wynton.ucsf.edu/hpc/software/software-repositories.html#repository_cbi">CBI</a> software stack. I have validated that almost all CRAN and Bioconductor packages can be installed with this new version.</p>
+</section>
+<section id="using-r" class="level2">
+<h2 class="anchored" data-anchor-id="using-r">Using R</h2>
+<p>To use R 4.5.0, which is the new default version, load it as:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">{alice<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">@</span>dev3 <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">~</span>}<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span> module load CBI r</span></code></pre></div>
+<p>Then you can run R interactively from the terminal using:</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">{alice<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">@</span>dev3 <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">~</span>}<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span> R <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">--</span>quiet</span>
+<span id="cb2-2"></span>
+<span id="cb2-3"><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">getRversion</span>()</span>
+<span id="cb2-4">[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'4.5.0'</span></span></code></pre></div>
+<p>To use R 4.5.0 in RStudio, just follow our <a href="https://wynton.ucsf.edu/hpc/howto/rstudio.html">RStudio documentation</a>.</p>
+</section>
+<section id="required-re-installing-r-packages" class="level2">
+<h2 class="anchored" data-anchor-id="required-re-installing-r-packages">Required re-installing R packages</h2>
+<p>As usual when we move to a new version (e.g.&nbsp;from R 4.4 to R 4.5), any R packages installed in the previous version (R 4.4) are <em>not</em> available in the new version (R 4.5). This is not the case when we move from one patch version to another, e.g.&nbsp;R 4.5.0 to R 4.5.1. With the release of R 4.5.0 we have to start from scratch and reinstall any packages we need. So, don’t be surprised when <code>library(dplyr)</code> gives an error on “there is no package called ‘dplyr’”. Also, when installing your first package in a new version of R, R will ask you:</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">install.packages</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"dplyr"</span>)</span>
+<span id="cb3-2">Warning <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">install.packages</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"dplyr"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span></span>
+<span id="cb3-3">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'lib = "/wynton/home/cbi/shared/software/_rocky8/R-4.5.0-gcc13/lib64/R/library"'</span></span>
+<span id="cb3-4">  is not writable</span>
+<span id="cb3-5">Would you like to use a personal library instead? (yes<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>No<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span>cancel)</span></code></pre></div>
+<p>Answer <strong>yes</strong> to this and anything else that R asks you to confirm. Doing so will make sure you get a smooth ride when using R. This is all explained in our <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a>.</p>
+</section>
+<section id="conda-must-be-deactivate-when-using-this-r-installation" class="level2">
+<h2 class="anchored" data-anchor-id="conda-must-be-deactivate-when-using-this-r-installation">Conda must be deactivate when using this R installation</h2>
+<p>Conda does not play well with other software tools installed on the system, especially not with programming tools such as Python and R. From experience working with Wynton users, Conda causes more problems for users than any of other software tool on Wynton. When it comes to R, having Conda activated when installing a R package causes that R package to depend on your personal Conda setup. If your Conda setup gets updated later on, which it will, there is a great risk some of your R packages breaks. You will get hard-to-troubleshoot, obscure “library” errors when you try to load those R packages. It is a very tedious task trying to figure out which R package are affected, so they can be re-installed.</p>
+<p>In the past, <code>module load CBI r</code> would <em>warn</em> about these problems, if it detected that Conda is activated. However, some users did not understand the importance of that warning, and some users are unaware that they have Conda activated. Ignoring the warning had no immediate impact, which could lead to thinking that “R seems to work fine with Conda.” Starting with R 4.5.0, <code>module load CBI r</code> will now give an <em>error</em> and refuse to load if Conda is activated, e.g.</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">(</span><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">base</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">)</span> <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">{alice@dev3</span> ~}$ module load CBI r</span>
+<span id="cb4-2"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">Lmod</span> has detected the following error: Using the <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'r'</span> module when a Conda</span>
+<span id="cb4-3"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">environment</span> is active risks resulting in hard-to-troubleshoot errors due</span>
+<span id="cb4-4"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">to</span> library conflicts. Make sure to deactivate the currently active Conda</span>
+<span id="cb4-5"><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'base'</span> environment before loading this module, e.g. <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'conda deactivate'</span>.</span>
+<span id="cb4-6"></span>
+<span id="cb4-7"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">(</span><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">base</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">)</span> <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">{alice@dev3</span> ~}$ R <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--version</span></span>
+<span id="cb4-8"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">-bash:</span> R: command not found</span></code></pre></div>
+<p>If you experience this, follow the instructions in the error message and deactivate Conda first, then retry:</p>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">(</span><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">base</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">)</span> <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">{alice@dev3</span> ~}$ conda deactivate</span>
+<span id="cb5-2"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">{alice@dev3</span> ~}$ module load CBI r</span>
+<span id="cb5-3"></span>
+<span id="cb5-4"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">{alice@dev3</span> ~}$ R <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--version</span></span>
+<span id="cb5-5"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">R</span> version 4.5.0 <span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">(</span><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">2025-04-11</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">)</span> <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">--</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"How About a Twenty-Six"</span></span>
+<span id="cb5-6"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">Copyright</span> <span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">(</span><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">C</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">)</span> <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">2025</span> The R Foundation for Statistical Computing</span>
+<span id="cb5-7"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">Platform:</span> x86_64-pc-linux-gnu</span></code></pre></div>
+</section>
+<section id="installation-is-well-validated" class="level2">
+<h2 class="anchored" data-anchor-id="installation-is-well-validated">Installation is well validated</h2>
+<p>Just as with previous versions of R available via the <a href="https://wynton.ucsf.edu/hpc/software/software-repositories.html#repository_cbi">CBI</a> stack, I have validated that nearly all R packages on <a href="https://cran.r-project.org">CRAN</a> and <a href="https://www.bioconductor.org">Bioconductor</a> can be installed out of the box using this new R 4.5.0 installation.</p>
+<p>Specifically, I have confirmed that 22,582 (99.1%) out of 22,371<sup>1</sup> CRAN packages and 2,289 (99.2%) out of 2,308<sup>2</sup> Bioconductor 3.21 software<sup>3</sup> packages are straightforward to install. A small number of packages require some extra love - see our <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a> for guidance on installing those.</p>
+<p>The 47 CRAN and 19 Bioconductor software packages that failed to install do so either because they depend on a system library that is not available on the cluster, or because they have bugs preventing them from being installed out of the box.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>CRAN: <code>nrow(available.packages(repos = "https://cran.r-project.org"))</code>↩︎</p></li>
+<li id="fn2"><p>Bioconductor: <code>nrow(available.packages(repos = "https://bioconductor.org/packages/3.21/bioc"))</code>↩︎</p></li>
+<li id="fn3"><p>I only validated installation of <a href="https://bioconductor.org/packages/release/BiocViews.html#___Software">Bioconductor “software” packages</a>. There are also Bioconductor “annotation-data”, “experiment-data”, and “workflow” packages, which I assume will install out-of-the-box.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>software</category>
+  <category>update</category>
+  <category>r</category>
+  <category>draft</category>
+  <guid>https://blog.wynton.ucsf.edu/posts/20250501-r-450/</guid>
+  <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
+</item>
 </channel>
 </rss>

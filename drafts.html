@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-image","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -191,7 +191,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZHJhZnQ=">draft <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cg==">r <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c29mdHdhcmU=">software <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dXBkYXRl">update <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -205,7 +205,48 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-
+<div class="quarto-post image-right" data-index="0" data-categories="c29mdHdhcmUlMkN1cGRhdGUlMkNyJTJDZHJhZnQ=" data-listing-date-sort="1746057600000" data-listing-file-modified-sort="1745777564227" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="674">
+<div class="thumbnail">
+<p><a href="./posts/20250501-r-450/index.html" class="no-external"></a></p><a href="./posts/20250501-r-450/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/20250501-r-450/Rlogo.svg" alt="The R Logo"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/20250501-r-450/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/20250501-r-450/index.html" class="no-external">R 4.5.0 is Available</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/20250501-r-450/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('c29mdHdhcmU='); return false;">
+software
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('dXBkYXRl'); return false;">
+update
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('cg=='); return false;">
+r
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZHJhZnQ='); return false;">
+draft
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/20250501-r-450/index.html" class="no-external">R 4.5.0 was releases on 2025-04-11 and is now available on Wynton through the CBI software stack. I have validated that almost all CRAN and Bioconductor packages can be…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/20250501-r-450/index.html" class="no-external">
+<div class="listing-date">
+May 1, 2025
+</div>
+<div class="listing-author">
+Henrik Bengtsson
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
