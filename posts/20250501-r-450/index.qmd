@@ -115,15 +115,16 @@ have validated that nearly all R packages on [CRAN] and [Bioconductor]
 can be installed out of the box using this new R 4.5.0 installation.
 
 Specifically, I have confirmed that 22,582 (99.1%) out of
-22,371[^cran-count] CRAN packages and 2,??? out of 2,308[^bioc-count]
-Bioconductor 3.21 packages are straightforward to install. A small
-number of packages require some extra love - see our [R documentation]
-for guidance on installing those.
+22,371[^cran-count] CRAN packages and 2,289 (99.2%) out of
+2,308[^bioc-count] Bioconductor 3.21 software[^bioc-software] packages
+are straightforward to install. A small number of packages require
+some extra love - see our [R documentation] for guidance on installing
+those.
 
-The 47 CRAN and ?? Bioconductor packages that failed to install do so
-either because they depend on a system library that is not available
-on the cluster, or because they have bugs preventing them from being
-installed out of the box.
+The 47 CRAN and 19 Bioconductor software packages that failed to
+install do so either because they depend on a system library that is
+not available on the cluster, or because they have bugs preventing
+them from being installed out of the box.
 
 
 [CRAN]: https://cran.r-project.org
@@ -132,5 +133,14 @@ installed out of the box.
 [R documentation]: https://wynton.ucsf.edu/hpc/howto/r.html
 [RStudio documentation]: https://wynton.ucsf.edu/hpc/howto/rstudio.html
 
-[^cran-count]: CRAN: `nrow(available.packages(repos = "https://cran.r-project.org"))`
-[^bioc-count]: Bioconductor: `nrow(available.packages(repos = "https://bioconductor.org/packages/3.21/bioc"))`
+[^cran-count]: CRAN: `nrow(available.packages(repos =
+"https://cran.r-project.org"))`
+
+[^bioc-count]: Bioconductor: `nrow(available.packages(repos =
+"https://bioconductor.org/packages/3.21/bioc"))`
+
+[^bioc-software]: I only validated installation of [Bioconductor
+"software"
+packages](https://bioconductor.org/packages/release/BiocViews.html#___Software). There
+are also Bioconductor "annotation-data", "experiment-data", and
+"workflow" packages, which I assume will install out-of-the-box.
