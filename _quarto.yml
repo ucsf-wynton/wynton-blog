@@ -16,14 +16,18 @@ website:
       - icon: rss
         href: index.xml
 
+  draft-mode: visible
+  
 format:
   html:
     theme: cosmo
     css:
     - assets/css/this_site.css
-    
+
 execute:
   freeze: auto
+
+draft-mode: visible
 
 resources:
   - CNAME
