@@ -1,5 +1,5 @@
 ---
-title: "Wynton Announcements"
+title: "Blog Posts under Development (nothing to see)"
 listing:
   contents: posts
   sort: "date desc"
@@ -9,9 +9,9 @@ listing:
   sort-ui: false
   filter-ui: false
   include:
-    categories: [announcement]
-  exclude:
     categories: [draft]
 page-layout: full
 title-block-banner: true
 ---
+
+
