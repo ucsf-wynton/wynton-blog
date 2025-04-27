@@ -250,6 +250,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Just as with previous versions of R available via the <a href="https://wynton.ucsf.edu/hpc/software/software-repositories.html#repository_cbi">CBI</a> stack, I have validated that nearly all R packages on <a href="https://cran.r-project.org">CRAN</a> and <a href="https://www.bioconductor.org">Bioconductor</a> can be installed out of the box using this new R 4.5.0 installation.</p>
 <p>Specifically, I have confirmed that 22,582 (99.1%) out of 22,371<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> CRAN packages and 2,289 (99.2%) out of 2,308<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Bioconductor 3.21 software<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> packages are straightforward to install. A small number of packages require some extra love - see our <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a> for guidance on installing those.</p>
 <p>The 47 CRAN and 19 Bioconductor software packages that failed to install do so either because they depend on a system library that is not available on the cluster, or because they have bugs preventing them from being installed out of the box.</p>
+<!--
+Results per 2025-04-27:
+
+CRAN packages that fail to install: [n=47] adea, bigrquerystorage, cbbinom, clrng, crumble, EMTscore, facmodTS, fangs, FIESTA, FIESTAutils, flint, fluidsynth, gdalraster, gpuR, graphpcor, hypergeo2, image.textlinedetector, interpolation, jack, minired, multibridge, OpenCL, opencv, PathwayVote, pcaL1, PCRA, PortfolioAnalytics, PortfolioOptim, qspray, RationalMatrix, ratioOfQsprays, Rcplex, RcppMeCab, RcppPlanc, resultant, revert, RmecabKo, ROI.plugin.cplex, ROI.plugin.symphony, ROracle, Rpoppler, RQuantLib, Rsymphony, rzmq, surveyvoi, symbolicQspray, weird
+
+Bioconductor packages that fail to install: [n=19] AneuFinder, BiGGR, BulkSignalR, ChemmineOB, cn.farms, CNEr, genoCN, gmapR, gpuMagic, graper, Harshlight, HilbertVisGUI, hypeR, PICS, PING, RbowtieCuda, rsbml, trigger, XNAString
+-->
 
 
 </section>
