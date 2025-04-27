@@ -21,6 +21,13 @@
     "text": "Welcome to the Wynton Blog – a space for sharing the insights that don’t quite fit within our rigorously vetted documentation. While the main Wynton website will remain the authoritative source for policies, system specifications, and step-by-step instructions that we guarantee are accurate, this blog opens the door to ideas that are still taking shape: quick tips we’ve found handy, early drafts of tutorials, and “rough-edge” discoveries that can help you work smarter on the cluster before they’re polished enough for the official docs.\nWe also hope this becomes a forum for the wider Wynton community. If your lab has devised a clever workflow, uncovered a gotcha, or mastered a third-party tool that others might find useful, we’d love to host your guest post. All articles will be labeled with the author and date so you can judge freshness and applicability, and we’ll revise or retire content as it matures – or if it proves wrong. Think of the blog as a living notebook: collaborative, occasionally messy, but always aimed at helping each other push research forward on Wynton. Dive in, share your expertise, and let’s grow together."
   },
   {
+    "objectID": "drafts.html",
+    "href": "drafts.html",
+    "title": "Blog Posts under Development (nothing to see)",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
     "objectID": "posts/20240911-announcement/index.html",
     "href": "posts/20240911-announcement/index.html",
     "title": "Announcement: Wynton Reboots on 2024-09-12",
