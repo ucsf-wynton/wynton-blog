@@ -12,7 +12,7 @@ draft: true
 
 ## TL;DR
 
-R 4.5.0 was releases on 2025-04-11 and is now available on Wynton
+R 4.5.0 was released on 2025-04-11 and is now available on Wynton
 through the [CBI] software stack. I have validated that almost all
 CRAN and Bioconductor packages can be installed with this new version.
 
@@ -37,7 +37,7 @@ Then you can run R interactively from the terminal using:
 To use R 4.5.0 in RStudio, just follow our [RStudio documentation].
 
 
-## Required re-installing R packages
+## R packages must be re-installed
 
 As usual when we move to a new version (e.g. from R 4.4 to R 4.5), any
 R packages installed in the previous version (R 4.4) are _not_
@@ -46,7 +46,7 @@ move from one patch version to another, e.g. R 4.5.0 to R 4.5.1. With
 the release of R 4.5.0 we have to start from scratch and reinstall any
 packages we need. So, don't be surprised when `library(dplyr)` gives
 an error on "there is no package called 'dplyr'". Also, when
-installing your first package in a new version of R, R will ask you:
+installing your first package in a new version of R, R asks:
 
 ```r
 > install.packages("dplyr")
@@ -61,25 +61,25 @@ confirm. Doing so will make sure you get a smooth ride when using R.
 This is all explained in our [R documentation].
 
 
-## Conda must be deactivate when using this R installation
+## Conda must be deactivated when using this R installation
 
 Conda does not play well with other software tools installed on the
 system, especially not with programming tools such as Python and
 R. From experience working with Wynton users, Conda causes more
-problems for users than any of other software tool on Wynton.  When it
-comes to R, having Conda activated when installing a R package causes
+problems for users than any other software tool on Wynton.  When it
+comes to R, having Conda activated when installing an R package causes
 that R package to depend on your personal Conda setup. If your Conda
 setup gets updated later on, which it will, there is a great risk some
-of your R packages breaks. You will get hard-to-troubleshoot, obscure
+of your R packages break. You will get hard-to-troubleshoot, obscure
 "library" errors when you try to load those R packages. It is a very
-tedious task trying to figure out which R package are affected, so
+tedious task trying to figure out which R packages are affected, so
 they can be re-installed.
 
 In the past, `module load CBI r` would _warn_ about these problems, if
 it detected that Conda is activated. However, some users did not
 understand the importance of that warning, and some users are unaware
 that they have Conda activated. Ignoring the warning had no immediate
-impact, which could lead to thinking that "R seems to work fine with
+impact, which could lead users to think that "R seems to work fine with
 Conda." Starting with R 4.5.0, `module load CBI r` will now give an
 _error_ and refuse to load if Conda is activated, e.g.
 
@@ -108,7 +108,7 @@ Platform: x86_64-pc-linux-gnu
 ```
 
 
-## Installation is well validated
+## Installation has been well validated
 
 Just as with previous versions of R available via the [CBI] stack, I
 have validated that nearly all R packages on [CRAN] and [Bioconductor]
