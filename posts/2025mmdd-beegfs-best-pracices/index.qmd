@@ -1,0 +1,24 @@
+---
+title: "Best Practices: How to Use BeeGFS Efficiently"
+author: "Gerry Fontenay"
+date: "2025-05-19"
+categories: [draft, best-practices, beegfs]
+draft: true
+---
+
+## TL;DR
+
+A quick take-home message.
+
+
+## Problem
+
+Describe the problem.
+
+
+## How to avoid problem
+
+Instructions.
+
+
+[TMPDIR]: https://wynton.ucsf.edu/hpc/scheduler/using-local-scratch.html
