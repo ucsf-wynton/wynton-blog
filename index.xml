@@ -9,7 +9,7 @@
 <link>https://blog.wynton.ucsf.edu/</link>
 <atom:link href="https://blog.wynton.ucsf.edu/index.xml" rel="self" type="application/rss+xml"/>
 <description>The UCSF Wynton Blog (prototype only - nothing to see)</description>
-<generator>quarto-1.6.43</generator>
+<generator>quarto-1.7.31</generator>
 <lastBuildDate>Fri, 25 Apr 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Welcome to the Wynton Blog</title>

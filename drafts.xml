@@ -9,8 +9,40 @@
 <link>https://blog.wynton.ucsf.edu/drafts.html</link>
 <atom:link href="https://blog.wynton.ucsf.edu/drafts.xml" rel="self" type="application/rss+xml"/>
 <description>The UCSF Wynton Blog (prototype only - nothing to see)</description>
-<generator>quarto-1.6.43</generator>
-<lastBuildDate>Thu, 01 May 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.7.31</generator>
+<lastBuildDate>Mon, 19 May 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Best Practices: How to Use BeeGFS Efficiently</title>
+  <dc:creator>Gerry Fontenay</dc:creator>
+  <link>https://blog.wynton.ucsf.edu/posts/2025mmdd-beegfs-best-pracices/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="tldr" class="level2">
+<h2 class="anchored" data-anchor-id="tldr">TL;DR</h2>
+<p>A quick take-home message.</p>
+</section>
+<section id="problem" class="level2">
+<h2 class="anchored" data-anchor-id="problem">Problem</h2>
+<p>Describe the problem.</p>
+</section>
+<section id="how-to-avoid-problem" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-avoid-problem">How to avoid problem</h2>
+<p>Instructions.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>draft</category>
+  <category>best-practices</category>
+  <category>beegfs</category>
+  <guid>https://blog.wynton.ucsf.edu/posts/2025mmdd-beegfs-best-pracices/</guid>
+  <pubDate>Mon, 19 May 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>R 4.5.0 is Available</title>
   <dc:creator>Henrik Bengtsson</dc:creator>

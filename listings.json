@@ -1,5 +1,12 @@
 [
   {
+    "listing": "/drafts.html",
+    "items": [
+      "/posts/2025mmdd-beegfs-best-pracices/index.html",
+      "/posts/20250501-r-450/index.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/posts/20250425-welcome/index.html"
@@ -9,12 +16,6 @@
     "listing": "/announcements.html",
     "items": [
       "/posts/20240911-announcement/index.html"
-    ]
-  },
-  {
-    "listing": "/drafts.html",
-    "items": [
-      "/posts/20250501-r-450/index.html"
     ]
   }
 ]
