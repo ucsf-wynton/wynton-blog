@@ -17,6 +17,9 @@ website:
         href: index.xml
 
   draft-mode: visible
+
+  repo-url: https://github.com/ucsf-wynton/wynton-blog
+  repo-actions: [edit, source]
   
 format:
   html:
