@@ -10,8 +10,13 @@ site.  This blog site uses [Quarto].
 
 ## Install Quarto
 
-See <https://quarto.org/docs/get-started/> for how to install Quarto
-on your operating system (e.g. Linux, macOS, and Windows).
+Quarto is available for Linux, macOS, and Windows:
+
+1. Go to <https://quarto.org/docs/get-started/>
+
+2. Download the one-click installation binary
+
+3. Install
 
 
 ## Preview blog site locally
