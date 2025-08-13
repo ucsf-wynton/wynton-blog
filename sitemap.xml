@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.wynton.ucsf.edu/posts/20250501-r-450/index.html</loc>
-    <lastmod>2025-05-19T19:25:15.565Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.wynton.ucsf.edu/posts/2025mmdd-beegfs-best-pracices/index.html</loc>
-    <lastmod>2025-05-19T19:25:15.565Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.wynton.ucsf.edu/drafts.html</loc>
-    <lastmod>2025-05-19T19:25:15.563Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.wynton.ucsf.edu/index.html</loc>
-    <lastmod>2025-05-19T19:25:15.563Z</lastmod>
+    <loc>https://blog.wynton.ucsf.edu/announcements.html</loc>
+    <lastmod>2025-08-13T23:55:11.999Z</lastmod>
   </url>
   <url>
     <loc>https://blog.wynton.ucsf.edu/about.html</loc>
-    <lastmod>2025-05-19T19:25:15.557Z</lastmod>
+    <lastmod>2025-08-13T23:55:11.999Z</lastmod>
   </url>
   <url>
-    <loc>https://blog.wynton.ucsf.edu/announcements.html</loc>
-    <lastmod>2025-05-19T19:25:15.557Z</lastmod>
+    <loc>https://blog.wynton.ucsf.edu/posts/2025/04/welcome/index.html</loc>
+    <lastmod>2025-08-13T23:55:12.005Z</lastmod>
   </url>
   <url>
-    <loc>https://blog.wynton.ucsf.edu/posts/20240911-announcement/index.html</loc>
-    <lastmod>2025-05-19T19:25:15.563Z</lastmod>
+    <loc>https://blog.wynton.ucsf.edu/posts/2025mmdd-beegfs-best-pracices/index.html</loc>
+    <lastmod>2025-08-13T23:55:12.007Z</lastmod>
   </url>
   <url>
-    <loc>https://blog.wynton.ucsf.edu/posts/20250425-welcome/index.html</loc>
-    <lastmod>2025-05-19T19:25:15.564Z</lastmod>
+    <loc>https://blog.wynton.ucsf.edu/drafts.html</loc>
+    <lastmod>2025-08-13T23:55:12.005Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.wynton.ucsf.edu/posts/2025/05/r-4.5.0/index.html</loc>
+    <lastmod>2025-08-13T23:55:12.007Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.wynton.ucsf.edu/posts/2024/09/announcement-20240912/index.html</loc>
+    <lastmod>2025-08-13T23:55:12.005Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.wynton.ucsf.edu/index.html</loc>
+    <lastmod>2025-08-13T23:55:12.005Z</lastmod>
   </url>
 </urlset>

@@ -9,12 +9,12 @@
 <link>https://blog.wynton.ucsf.edu/announcements.html</link>
 <atom:link href="https://blog.wynton.ucsf.edu/announcements.xml" rel="self" type="application/rss+xml"/>
 <description>The UCSF Wynton Blog (prototype only - nothing to see)</description>
-<generator>quarto-1.7.31</generator>
+<generator>quarto-1.7.33</generator>
 <lastBuildDate>Wed, 11 Sep 2024 09:10:00 GMT</lastBuildDate>
 <item>
   <title>Announcement: Wynton Reboots on 2024-09-12</title>
   <dc:creator>Erik Ellestad</dc:creator>
-  <link>https://blog.wynton.ucsf.edu/posts/20240911-announcement/</link>
+  <link>https://blog.wynton.ucsf.edu/posts/2024/09/announcement-20240912/</link>
   <description><![CDATA[ 
 
 
@@ -50,7 +50,7 @@
  ]]></description>
   <category>announcement</category>
   <category>maintenance</category>
-  <guid>https://blog.wynton.ucsf.edu/posts/20240911-announcement/</guid>
+  <guid>https://blog.wynton.ucsf.edu/posts/2024/09/announcement-20240912/</guid>
   <pubDate>Wed, 11 Sep 2024 09:10:00 GMT</pubDate>
 </item>
 </channel>
