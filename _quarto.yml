@@ -13,8 +13,10 @@ website:
       - about.qmd
       - icon: github
         href: https://github.com/ucsf-wynton/wynton-blog
+        aria-label: "Wynton Blog GitHub repository"
       - icon: rss
         href: index.xml
+        aria-label: "Wynton Blog RSS feed"
 
   draft-mode: visible
 

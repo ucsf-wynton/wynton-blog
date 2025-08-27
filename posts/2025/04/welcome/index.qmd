@@ -4,6 +4,7 @@ author: "The Wynton Team"
 date: "2025-04-25"
 categories: [news]
 image: "ucsf_wynton_logo-black-006699-left.png"
+image-alt: "UCSF Wynton logo in black and teal, with logotype aligned left"
 ---
  
 Welcome to the **Wynton Blog** -- a space for sharing the insights
