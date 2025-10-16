@@ -8,6 +8,11 @@
   color: black;
 }
 
+.listing-category {
+  color: #444;
+}
+
+
 /*--------------------------------------------------------------*
  * Figures
  *--------------------------------------------------------------*/
@@ -29,15 +34,15 @@ body {
 .navbar {
   background-color: #ffdd00;
   border-color: #dec000;
-  color: #555;
+  color: #333;
 }
 
 .navbar .navbar-brand {
-  color: #555;
+  color: #333;
 }
 
 .navbar .navbar-nav > li > a {
-  color: #555;
+  color: #333;
 }
 
 .navbar .navbar-nav > li > a:focus {
@@ -53,7 +58,7 @@ body {
 }
   
 .navbar .navbar-nav > .active > a:focus {
-  color: #555555;
+  color: #333;
   background-color: #dec000;
 }
 
