@@ -8,6 +8,8 @@ website:
 
   description: "The UCSF Wynton Blog (prototype only - nothing to see)"
 
+  favicon: images/favicon.ico
+
   navbar:
     logo: "images/logo.png"
     logo-alt: "Return to the Wynton Blog front page"
