@@ -7,27 +7,6 @@
     "text": "Announcement: Wynton Reboots on 2024-09-12\n\n\n\nannouncement\n\nmaintenance\n\n\n\n\n\n\n\n\n\nSep 11, 2024\n\n\nErik Ellestad\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "The Wynton Blog (prototype only; nothing to see)",
-    "section": "",
-    "text": "Welcome to the Wynton Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nApr 25, 2025\n\n\nThe Wynton Team\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/2025/04/welcome/index.html",
-    "href": "posts/2025/04/welcome/index.html",
-    "title": "Welcome to the Wynton Blog",
-    "section": "",
-    "text": "Welcome to the Wynton Blog – a space for sharing the insights that don’t quite fit within our rigorously vetted documentation. While the main Wynton website will remain the authoritative source for policies, system specifications, and step-by-step instructions that we guarantee are accurate, this blog opens the door to ideas that are still taking shape: quick tips we’ve found handy, early drafts of tutorials, and “rough-edge” discoveries that can help you work smarter on the cluster before they’re polished enough for the official docs.\nWe also hope this becomes a forum for the wider Wynton community. If your lab has devised a clever workflow, uncovered a gotcha, or mastered a third-party tool that others might find useful, we’d love to host your guest post. All articles will be labeled with the author and date so you can judge freshness and applicability, and we’ll revise or retire content as it matures – or if it proves wrong. Think of the blog as a living notebook: collaborative, occasionally messy, but always aimed at helping each other push research forward on Wynton. Dive in, share your expertise, and let’s grow together."
-  },
-  {
-    "objectID": "posts/2024/09/announcement-20240912/index.html",
-    "href": "posts/2024/09/announcement-20240912/index.html",
-    "title": "Announcement: Wynton Reboots on 2024-09-12",
-    "section": "",
-    "text": "TLDR\nOn Thursday, September 12 at 12:30 PT we will be rebooting all Wynton interactive nodes to upgrade the kernel and implement RAM and CPU limits on individual user sessions. To avoid data loss, please logout and save your work before the scheduled reboot.\n\n\nThe Rest of the Story™\nTo increase the stability of the Wynton dev, login, and data transfer nodes we are implementing CPU and memory limitations for user sessions on those nodes.\nOn dev and data transfer nodes, users will be limited to the equivalent of 2 CPUs and user sessions or processes which take more than 96 GiB of the system’s available memory will be killed.\nOn login nodes, users will be limited to the equivalent of 1 CPU and user sessions or processes which take more than 32 GiB of the system’s available memory will be killed.\nBy introducing these CPU and memory limits, we hope to avoid most of the past traffic jams that have occurred on the interactive nodes. In the past, there was always the risk that a single user process could bring these machines to a standstill and they could become non-responsive, or even cause them to crash. These new limits lower the risk for individual processes overconsuming the CPU and memory, resulting in, what we hope, a smoother ride for everyone using these shared machines.\nTo implement these changes and push an update to the Linux kernel, on Thursday, September 12 we will be rebooting all interactive nodes: log1, log2, plog1, dt1, dt2, pdt1, pdt2, dev1, dev2, dev3, pdev1, gpudev1, and pgpudev1.\nBefore the scheduled reboot, to prevent data loss, please save your work and logout of any interactive sessions.\nFrom the Wynton website:\n\nAlthough you should always run analyses via the job scheduler, there are times when you may need to develop parts of it interactively at the command-line prompt. For instance, you may need to install some software, a few R packages, or run some quick tests on your new pipeline. Wynton HPC provides development nodes dedicated for such short-term usages and that are configured similarly to the compute nodes. The dev nodes are meant for light interactive work and quick test jobs. Please submit all heavy processing to the cluster via qsub.\n\n\n\nAddendum\n\n2024-09-12: Jobs on scheduler, queued or running, are not affected by this reboot of interactive nodes."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Wynton HPC - UCSF Research Computing at Scale",
@@ -77,6 +56,20 @@
     "text": "Footnotes\n\n\nCRAN: nrow(available.packages(repos = \"https://cran.r-project.org\"))↩︎\nBioconductor: nrow(available.packages(repos = \"https://bioconductor.org/packages/3.21/bioc\"))↩︎\nI only validated installation of Bioconductor “software” packages. There are also Bioconductor “annotation-data”, “experiment-data”, and “workflow” packages, which I assume will install out-of-the-box.↩︎"
   },
   {
+    "objectID": "posts/2024/09/announcement-20240912/index.html",
+    "href": "posts/2024/09/announcement-20240912/index.html",
+    "title": "Announcement: Wynton Reboots on 2024-09-12",
+    "section": "",
+    "text": "TLDR\nOn Thursday, September 12 at 12:30 PT we will be rebooting all Wynton interactive nodes to upgrade the kernel and implement RAM and CPU limits on individual user sessions. To avoid data loss, please logout and save your work before the scheduled reboot.\n\n\nThe Rest of the Story™\nTo increase the stability of the Wynton dev, login, and data transfer nodes we are implementing CPU and memory limitations for user sessions on those nodes.\nOn dev and data transfer nodes, users will be limited to the equivalent of 2 CPUs and user sessions or processes which take more than 96 GiB of the system’s available memory will be killed.\nOn login nodes, users will be limited to the equivalent of 1 CPU and user sessions or processes which take more than 32 GiB of the system’s available memory will be killed.\nBy introducing these CPU and memory limits, we hope to avoid most of the past traffic jams that have occurred on the interactive nodes. In the past, there was always the risk that a single user process could bring these machines to a standstill and they could become non-responsive, or even cause them to crash. These new limits lower the risk for individual processes overconsuming the CPU and memory, resulting in, what we hope, a smoother ride for everyone using these shared machines.\nTo implement these changes and push an update to the Linux kernel, on Thursday, September 12 we will be rebooting all interactive nodes: log1, log2, plog1, dt1, dt2, pdt1, pdt2, dev1, dev2, dev3, pdev1, gpudev1, and pgpudev1.\nBefore the scheduled reboot, to prevent data loss, please save your work and logout of any interactive sessions.\nFrom the Wynton website:\n\nAlthough you should always run analyses via the job scheduler, there are times when you may need to develop parts of it interactively at the command-line prompt. For instance, you may need to install some software, a few R packages, or run some quick tests on your new pipeline. Wynton HPC provides development nodes dedicated for such short-term usages and that are configured similarly to the compute nodes. The dev nodes are meant for light interactive work and quick test jobs. Please submit all heavy processing to the cluster via qsub.\n\n\n\nAddendum\n\n2024-09-12: Jobs on scheduler, queued or running, are not affected by this reboot of interactive nodes."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Wynton Blog (prototype only; nothing to see)",
+    "section": "",
+    "text": "Welcome to the Wynton Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nApr 25, 2025\n\n\nThe Wynton Team\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "posts/2025mmdd-beegfs-best-pracices/index.html",
     "href": "posts/2025mmdd-beegfs-best-pracices/index.html",
     "title": "Best Practices: How to Use BeeGFS Efficiently",
@@ -103,6 +96,13 @@
     "title": "Best Practices: How to Use BeeGFS Efficiently",
     "section": "How to avoid problem",
     "text": "How to avoid problem\nInstructions."
+  },
+  {
+    "objectID": "posts/2025/04/welcome/index.html",
+    "href": "posts/2025/04/welcome/index.html",
+    "title": "Welcome to the Wynton Blog",
+    "section": "",
+    "text": "Welcome to the Wynton Blog – a space for sharing the insights that don’t quite fit within our rigorously vetted documentation. While the main Wynton website will remain the authoritative source for policies, system specifications, and step-by-step instructions that we guarantee are accurate, this blog opens the door to ideas that are still taking shape: quick tips we’ve found handy, early drafts of tutorials, and “rough-edge” discoveries that can help you work smarter on the cluster before they’re polished enough for the official docs.\nWe also hope this becomes a forum for the wider Wynton community. If your lab has devised a clever workflow, uncovered a gotcha, or mastered a third-party tool that others might find useful, we’d love to host your guest post. All articles will be labeled with the author and date so you can judge freshness and applicability, and we’ll revise or retire content as it matures – or if it proves wrong. Think of the blog as a living notebook: collaborative, occasionally messy, but always aimed at helping each other push research forward on Wynton. Dive in, share your expertise, and let’s grow together."
   },
   {
     "objectID": "drafts.html",
