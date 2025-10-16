@@ -1,14 +1,14 @@
 [
   {
-    "listing": "/index.html",
-    "items": [
-      "/posts/2025/04/welcome/index.html"
-    ]
-  },
-  {
     "listing": "/announcements.html",
     "items": [
       "/posts/2024/09/announcement-20240912/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/2025/04/welcome/index.html"
     ]
   },
   {

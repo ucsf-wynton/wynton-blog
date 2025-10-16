@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.wynton.ucsf.edu/index.html</loc>
-    <lastmod>2025-08-28T20:00:31.308Z</lastmod>
-  </url>
-  <url>
     <loc>https://blog.wynton.ucsf.edu/announcements.html</loc>
-    <lastmod>2025-08-28T20:00:31.301Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.wynton.ucsf.edu/posts/2024/09/announcement-20240912/index.html</loc>
-    <lastmod>2025-08-28T20:00:31.308Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.wynton.ucsf.edu/posts/2025/05/r-4.5.0/index.html</loc>
-    <lastmod>2025-08-28T20:00:31.310Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.wynton.ucsf.edu/posts/2025mmdd-beegfs-best-pracices/index.html</loc>
-    <lastmod>2025-08-28T20:00:31.310Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.wynton.ucsf.edu/posts/2025/04/welcome/index.html</loc>
-    <lastmod>2025-08-28T20:00:31.309Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.wynton.ucsf.edu/drafts.html</loc>
-    <lastmod>2025-08-28T20:00:31.308Z</lastmod>
+    <lastmod>2025-10-16T21:15:43.922Z</lastmod>
   </url>
   <url>
     <loc>https://blog.wynton.ucsf.edu/about.html</loc>
-    <lastmod>2025-08-28T20:00:31.301Z</lastmod>
+    <lastmod>2025-10-16T21:15:43.922Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.wynton.ucsf.edu/posts/2025/05/r-4.5.0/index.html</loc>
+    <lastmod>2025-10-16T21:15:43.931Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.wynton.ucsf.edu/posts/2024/09/announcement-20240912/index.html</loc>
+    <lastmod>2025-10-16T21:15:43.929Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.wynton.ucsf.edu/index.html</loc>
+    <lastmod>2025-10-16T21:15:43.929Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.wynton.ucsf.edu/posts/2025mmdd-beegfs-best-pracices/index.html</loc>
+    <lastmod>2025-10-16T21:15:43.931Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.wynton.ucsf.edu/posts/2025/04/welcome/index.html</loc>
+    <lastmod>2025-10-16T21:15:43.929Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.wynton.ucsf.edu/drafts.html</loc>
+    <lastmod>2025-10-16T21:15:43.929Z</lastmod>
   </url>
 </urlset>

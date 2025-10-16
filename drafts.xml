@@ -9,7 +9,7 @@
 <link>https://blog.wynton.ucsf.edu/drafts.html</link>
 <atom:link href="https://blog.wynton.ucsf.edu/drafts.xml" rel="self" type="application/rss+xml"/>
 <description>The UCSF Wynton Blog (prototype only - nothing to see)</description>
-<generator>quarto-1.7.33</generator>
+<generator>quarto-1.8.25</generator>
 <lastBuildDate>Mon, 19 May 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Best Practices: How to Use BeeGFS Efficiently</title>
@@ -67,15 +67,15 @@
 <section id="using-r" class="level2">
 <h2 class="anchored" data-anchor-id="using-r">Using R</h2>
 <p>To use R 4.5.0, which is the new default version, load it as:</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">{alice<span class="sc" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">{alice<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">@</span>dev3 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">~</span>}<span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">$</span> module load CBI r</span></code></pre></div>
+font-style: inherit;">$</span> module load CBI r</span></code></pre></div></div>
 <p>Then you can run R interactively from the terminal using:</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">{alice<span class="sc" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">{alice<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">@</span>dev3 <span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -94,13 +94,13 @@ font-style: inherit;">getRversion</span>()</span>
 background-color: null;
 font-style: inherit;">1</span>] <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'4.5.0'</span></span></code></pre></div>
+font-style: inherit;">'4.5.0'</span></span></code></pre></div></div>
 <p>To use R 4.5.0 in RStudio, just follow our <a href="https://wynton.ucsf.edu/hpc/howto/rstudio.html">RStudio documentation</a>.</p>
 </section>
 <section id="r-packages-must-be-re-installed" class="level2">
 <h2 class="anchored" data-anchor-id="r-packages-must-be-re-installed">R packages must be re-installed</h2>
 <p>As usual when we move to a new version (e.g.&nbsp;from R 4.4 to R 4.5), any R packages installed in the previous version (R 4.4) are <em>not</em> available in the new version (R 4.5). This is not the case when we move from one patch version to another, e.g.&nbsp;R 4.5.0 to R 4.5.1. With the release of R 4.5.0 we have to start from scratch and reinstall any packages we need. So, don’t be surprised when <code>library(dplyr)</code> gives an error on “there is no package called ‘dplyr’”. Also, when installing your first package in a new version of R, R asks:</p>
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="sc" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">&gt;</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -125,14 +125,14 @@ font-style: inherit;">'lib = "/wynton/home/cbi/shared/software/_rocky8/R-4.5.0-g
 background-color: null;
 font-style: inherit;">/</span>No<span class="sc" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">/</span>cancel)</span></code></pre></div>
+font-style: inherit;">/</span>cancel)</span></code></pre></div></div>
 <p>Answer <strong>yes</strong> to this and anything else that R asks you to confirm. Doing so will make sure you get a smooth ride when using R. This is all explained in our <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a>.</p>
 </section>
 <section id="conda-must-be-deactivated-when-using-this-r-installation" class="level2">
 <h2 class="anchored" data-anchor-id="conda-must-be-deactivated-when-using-this-r-installation">Conda must be deactivated when using this R installation</h2>
 <p>Conda does not play well with other software tools installed on the system, especially not with programming tools such as Python and R. From experience working with Wynton users, Conda causes more problems for users than any other software tool on Wynton. When it comes to R, having Conda activated when installing an R package causes that R package to depend on your personal Conda setup. If your Conda setup gets updated later on, which it will, there is a great risk some of your R packages break. You will get hard-to-troubleshoot, obscure “library” errors when you try to load those R packages. It is a very tedious task trying to figure out which R packages are affected, so they can be re-installed.</p>
 <p>In the past, <code>module load CBI r</code> would <em>warn</em> about these problems, if it detected that Conda is activated. However, some users did not understand the importance of that warning, and some users are unaware that they have Conda activated. Ignoring the warning had no immediate impact, which could lead users to think that “R seems to work fine with Conda.” Starting with R 4.5.0, <code>module load CBI r</code> will now give an <em>error</em> and refuse to load if Conda is activated, e.g.</p>
-<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="kw" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">(</span><span class="ex" style="color: null;
@@ -175,9 +175,9 @@ background-color: null;
 font-style: inherit;">--version</span></span>
 <span id="cb4-8"><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">-bash:</span> R: command not found</span></code></pre></div>
+font-style: inherit;">-bash:</span> R: command not found</span></code></pre></div></div>
 <p>If you experience this, follow the instructions in the error message and deactivate Conda first, then retry:</p>
-<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><span class="kw" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">(</span><span class="ex" style="color: null;
@@ -225,7 +225,7 @@ background-color: null;
 font-style: inherit;">2025</span> The R Foundation for Statistical Computing</span>
 <span id="cb5-7"><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">Platform:</span> x86_64-pc-linux-gnu</span></code></pre></div>
+font-style: inherit;">Platform:</span> x86_64-pc-linux-gnu</span></code></pre></div></div>
 </section>
 <section id="installation-has-been-well-validated" class="level2">
 <h2 class="anchored" data-anchor-id="installation-has-been-well-validated">Installation has been well validated</h2>

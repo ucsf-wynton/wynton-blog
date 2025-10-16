@@ -9,7 +9,7 @@
 <link>https://blog.wynton.ucsf.edu/announcements.html</link>
 <atom:link href="https://blog.wynton.ucsf.edu/announcements.xml" rel="self" type="application/rss+xml"/>
 <description>The UCSF Wynton Blog (prototype only - nothing to see)</description>
-<generator>quarto-1.7.33</generator>
+<generator>quarto-1.8.25</generator>
 <lastBuildDate>Wed, 11 Sep 2024 09:10:00 GMT</lastBuildDate>
 <item>
   <title>Announcement: Wynton Reboots on 2024-09-12</title>
