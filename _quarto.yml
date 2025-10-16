@@ -9,6 +9,9 @@ website:
   description: "The UCSF Wynton Blog (prototype only - nothing to see)"
 
   navbar:
+    logo: "images/logo.png"
+    logo-alt: "Return to the Wynton Blog front page"
+  
     right:
       - about.qmd
       - icon: github
