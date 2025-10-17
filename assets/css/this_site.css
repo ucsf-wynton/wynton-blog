@@ -6,6 +6,7 @@
  *--------------------------------------------------------------*/
 .quarto-title .quarto-categories .quarto-category a {
   color: black;
+  font-weight: bold;
 }
 
 div.quarto-title-meta-heading {
