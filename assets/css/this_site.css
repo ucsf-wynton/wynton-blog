@@ -84,8 +84,9 @@ body {
     color: #2d6da3;
 }
 
+/* Contrast for UCSF color #2d6da3 on white background is 5.48 */
 a {
-  color: #2d6da3;
+  color: #205680;
 }
 
 
