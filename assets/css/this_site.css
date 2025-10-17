@@ -12,10 +12,6 @@
   color: #444;
 }
 
-.toc-action {
-  color: #595959;
-}
-
 
 /*--------------------------------------------------------------*
  * Figures
@@ -72,6 +68,10 @@ body {
 
 .navbar .navbar-form {
   border-color: #dec000;
+}
+
+.nav-footer a {
+  color: #595959;
 }
 
 
