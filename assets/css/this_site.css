@@ -4,7 +4,11 @@
 /*--------------------------------------------------------------*
  * Override quarto defaults
  *--------------------------------------------------------------*/
-.quarto-category {
+.quarto-title .quarto-categories .quarto-category a {
+  color: black;
+}
+
+div.quarto-title-meta-heading {
   color: black;
 }
 
