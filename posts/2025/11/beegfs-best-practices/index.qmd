@@ -1,7 +1,7 @@
 ---
 title: "Best Practices: How to Use BeeGFS Efficiently"
 author: "Gerry Fontenay"
-date: "2025-05-19"
+date: "2025-11-30"
 categories: [draft, best-practices, beegfs]
 draft: true
 ---
