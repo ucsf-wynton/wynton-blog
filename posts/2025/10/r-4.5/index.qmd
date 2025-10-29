@@ -114,12 +114,11 @@ Just as with previous versions of R available via the [CBI] stack, I
 have validated that nearly all R packages on [CRAN] and [Bioconductor]
 can be installed out of the box using the R 4.5.0 installation.
 
-I have[^when] confirmed that 22,582 (99.1%) out of 22,371[^cran-count]
-CRAN packages and 2,289 (99.2%) out of 2,308[^bioc-count] Bioconductor
-3.21 (2025-04-16) software[^bioc-software] packages are
-straightforward to install. A small number of packages require some
-extra love - see our [R documentation] for guidance on installing
-those.
+I have confirmed that 22,582 (99.1%) out of 22,371[^cran-count] CRAN
+packages and 2,289 (99.2%) out of 2,308[^bioc-count] Bioconductor 3.21
+(2025-04-16) software[^bioc-software] packages are straightforward to
+install[^when]. A small number of packages require some extra love -
+see our [R documentation] for guidance on installing those.
 
 The 47 CRAN and 19 Bioconductor software packages that failed to
 install do so either because they depend on a system library that is
@@ -153,4 +152,5 @@ packages](https://bioconductor.org/packages/release/BiocViews.html#___Software).
 are also Bioconductor "annotation-data", "experiment-data", and
 "workflow" packages, which I assume will install out-of-the-box.
 
-[^when]: I ran these checks on 2025-04-27 (sic!).
+[^when]: The package installation checks took several days
+(2025-04-27/2025-04-29) to complete.
