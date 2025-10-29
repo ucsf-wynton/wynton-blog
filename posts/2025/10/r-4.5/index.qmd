@@ -1,5 +1,5 @@
 ---
-title: "R 4.5.0 is Available"
+title: "R 4.5 is Available"
 author: "Henrik Bengtsson"
 date: "2025-10-30"
 categories: [software, update, r, draft]
@@ -12,14 +12,15 @@ draft: true
 
 ## TL;DR
 
-R 4.5.0 was released on 2025-04-11 and is now available on Wynton
-through the [CBI] software stack. I have validated that almost all
-CRAN and Bioconductor packages can be installed with this new version.
+R 4.5.0 was released on 2025-04-11 and R 4.5.1 on 2025-06-13. Both are
+now available on Wynton through the [CBI] software stack. I have
+validated that almost all CRAN and Bioconductor packages can be
+installed with this new version.
 
 
 ## Using R
 
-To use R 4.5.0, which is the new default version, load it as:
+To use the latest R 4.5, which is the new default version, load it as:
 
 ```r
 {alice@dev3 ~}$ module load CBI r
@@ -31,10 +32,10 @@ Then you can run R interactively from the terminal using:
 {alice@dev3 ~}$ R --quiet
 
 > getRversion()
-[1] '4.5.0'
+[1] '4.5.1'
 ```
 
-To use R 4.5.0 in RStudio, just follow our [RStudio documentation].
+To use R 4.5 in RStudio, just follow our [RStudio documentation].
 
 
 ## R packages must be re-installed
@@ -51,7 +52,7 @@ installing your first package in a new version of R, R asks:
 ```r
 > install.packages("dplyr")
 Warning in install.packages("dplyr") :
-  'lib = "/wynton/home/cbi/shared/software/_rocky8/R-4.5.0-gcc13/lib64/R/library"'
+  'lib = "/wynton/home/cbi/shared/software/_rocky8/R-4.5.1-gcc13/lib64/R/library"'
   is not writable
 Would you like to use a personal library instead? (yes/No/cancel)
 ```
@@ -102,7 +103,7 @@ and deactivate Conda first, then retry:
 {alice@dev3 ~}$ module load CBI r
 
 {alice@dev3 ~}$ R --version
-R version 4.5.0 (2025-04-11) -- "How About a Twenty-Six"
+R version 4.5.1 (2025-06-13) -- "Great Square Root"
 Copyright (C) 2025 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu
 ```
@@ -112,7 +113,7 @@ Platform: x86_64-pc-linux-gnu
 
 Just as with previous versions of R available via the [CBI] stack, I
 have validated that nearly all R packages on [CRAN] and [Bioconductor]
-can be installed out of the box using this new R 4.5.0 installation.
+can be installed out of the box using the R 4.5.0 installation.
 
 Specifically, I have confirmed that 22,582 (99.1%) out of
 22,371[^cran-count] CRAN packages and 2,289 (99.2%) out of
