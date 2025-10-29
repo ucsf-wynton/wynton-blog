@@ -5,16 +5,16 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>[PROTOTYPE] The UCSF Wynton Blog</title>
+<title>The UCSF Wynton Blog</title>
 <link>https://blog.wynton.ucsf.edu/drafts.html</link>
 <atom:link href="https://blog.wynton.ucsf.edu/drafts.xml" rel="self" type="application/rss+xml"/>
-<description>The UCSF Wynton Blog (prototype only - nothing to see)</description>
+<description>The UCSF Wynton Blog</description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Mon, 19 May 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 30 Nov 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Best Practices: How to Use BeeGFS Efficiently</title>
   <dc:creator>Gerry Fontenay</dc:creator>
-  <link>https://blog.wynton.ucsf.edu/posts/2025mmdd-beegfs-best-pracices/</link>
+  <link>https://blog.wynton.ucsf.edu/posts/2025/11/beegfs-best-practices/</link>
   <description><![CDATA[ 
 
 
@@ -40,13 +40,13 @@
   <category>draft</category>
   <category>best-practices</category>
   <category>beegfs</category>
-  <guid>https://blog.wynton.ucsf.edu/posts/2025mmdd-beegfs-best-pracices/</guid>
-  <pubDate>Mon, 19 May 2025 00:00:00 GMT</pubDate>
+  <guid>https://blog.wynton.ucsf.edu/posts/2025/11/beegfs-best-practices/</guid>
+  <pubDate>Sun, 30 Nov 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>R 4.5.0 is Available</title>
   <dc:creator>Henrik Bengtsson</dc:creator>
-  <link>https://blog.wynton.ucsf.edu/posts/2025/05/r-4.5.0/</link>
+  <link>https://blog.wynton.ucsf.edu/posts/2025/10/r-4.5.0/</link>
   <description><![CDATA[ 
 
 
@@ -56,7 +56,7 @@
 <div class="float-right-30">
 <div class="quarto-figure quarto-figure-right">
 <figure class="figure">
-<p><img src="https://blog.wynton.ucsf.edu/posts/2025/05/r-4.5.0/Rlogo.svg" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="The R Logo"></p>
+<p><img src="https://blog.wynton.ucsf.edu/posts/2025/10/r-4.5.0/Rlogo.svg" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="The R Logo"></p>
 </figure>
 </div>
 </div>
@@ -256,8 +256,8 @@ Bioconductor packages that fail to install: [n=19] AneuFinder, BiGGR, BulkSignal
   <category>update</category>
   <category>r</category>
   <category>draft</category>
-  <guid>https://blog.wynton.ucsf.edu/posts/2025/05/r-4.5.0/</guid>
-  <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
+  <guid>https://blog.wynton.ucsf.edu/posts/2025/10/r-4.5.0/</guid>
+  <pubDate>Thu, 30 Oct 2025 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

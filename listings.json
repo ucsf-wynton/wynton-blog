@@ -1,21 +1,15 @@
 [
   {
-    "listing": "/announcements.html",
+    "listing": "/drafts.html",
     "items": [
-      "/posts/2024/09/announcement-20240912/index.html"
+      "/posts/2025/11/beegfs-best-practices/index.html",
+      "/posts/2025/10/r-4.5.0/index.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
-      "/posts/2025/04/welcome/index.html"
-    ]
-  },
-  {
-    "listing": "/drafts.html",
-    "items": [
-      "/posts/2025mmdd-beegfs-best-pracices/index.html",
-      "/posts/2025/05/r-4.5.0/index.html"
+      "/posts/2025/10/welcome/index.html"
     ]
   }
 ]
