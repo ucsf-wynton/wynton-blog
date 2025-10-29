@@ -1,9 +1,8 @@
 ---
 title: "R 4.5 is Available"
 author: "Henrik Bengtsson"
-date: "2025-10-30"
-categories: [software, update, r, draft]
-draft: true
+date: "2025-10-29"
+categories: [software, update, r]
 ---
 
 ::: {.float-right-30}
