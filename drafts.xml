@@ -44,9 +44,9 @@
   <pubDate>Sun, 30 Nov 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>R 4.5.0 is Available</title>
+  <title>R 4.5 is Available</title>
   <dc:creator>Henrik Bengtsson</dc:creator>
-  <link>https://blog.wynton.ucsf.edu/posts/2025/10/r-4.5.0/</link>
+  <link>https://blog.wynton.ucsf.edu/posts/2025/10/r-4.5/</link>
   <description><![CDATA[ 
 
 
@@ -56,17 +56,17 @@
 <div class="float-right-30">
 <div class="quarto-figure quarto-figure-right">
 <figure class="figure">
-<p><img src="https://blog.wynton.ucsf.edu/posts/2025/10/r-4.5.0/Rlogo.svg" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="The R Logo"></p>
+<p><img src="https://blog.wynton.ucsf.edu/posts/2025/10/r-4.5/Rlogo.svg" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="The R Logo"></p>
 </figure>
 </div>
 </div>
 <section id="tldr" class="level2">
 <h2 class="anchored" data-anchor-id="tldr">TL;DR</h2>
-<p>R 4.5.0 was released on 2025-04-11 and is now available on Wynton through the <a href="https://wynton.ucsf.edu/hpc/software/software-repositories.html#repository_cbi">CBI</a> software stack. I have validated that almost all CRAN and Bioconductor packages can be installed with this new version.</p>
+<p>R 4.5.0 was released on 2025-04-11 and R 4.5.1 on 2025-06-13. Both are now available on Wynton through the <a href="https://wynton.ucsf.edu/hpc/software/software-repositories.html#repository_cbi">CBI</a> software stack. I have validated that almost all CRAN and Bioconductor packages can be installed with this new version.</p>
 </section>
 <section id="using-r" class="level2">
 <h2 class="anchored" data-anchor-id="using-r">Using R</h2>
-<p>To use R 4.5.0, which is the new default version, load it as:</p>
+<p>To use the latest R 4.5, which is the new default version, load it as:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">{alice<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">@</span>dev3 <span class="sc" style="color: #5E5E5E;
@@ -94,8 +94,8 @@ font-style: inherit;">getRversion</span>()</span>
 background-color: null;
 font-style: inherit;">1</span>] <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'4.5.0'</span></span></code></pre></div></div>
-<p>To use R 4.5.0 in RStudio, just follow our <a href="https://wynton.ucsf.edu/hpc/howto/rstudio.html">RStudio documentation</a>.</p>
+font-style: inherit;">'4.5.1'</span></span></code></pre></div></div>
+<p>To use R 4.5 in RStudio, just follow our <a href="https://wynton.ucsf.edu/hpc/howto/rstudio.html">RStudio documentation</a>.</p>
 </section>
 <section id="r-packages-must-be-re-installed" class="level2">
 <h2 class="anchored" data-anchor-id="r-packages-must-be-re-installed">R packages must be re-installed</h2>
@@ -119,7 +119,7 @@ background-color: null;
 font-style: inherit;">:</span></span>
 <span id="cb3-3">  <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">'lib = "/wynton/home/cbi/shared/software/_rocky8/R-4.5.0-gcc13/lib64/R/library"'</span></span>
+font-style: inherit;">'lib = "/wynton/home/cbi/shared/software/_rocky8/R-4.5.1-gcc13/lib64/R/library"'</span></span>
 <span id="cb3-4">  is not writable</span>
 <span id="cb3-5">Would you like to use a personal library instead? (yes<span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -199,18 +199,18 @@ background-color: null;
 font-style: inherit;">--version</span></span>
 <span id="cb5-5"><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">R</span> version 4.5.0 <span class="er" style="color: #AD0000;
+font-style: inherit;">R</span> version 4.5.1 <span class="er" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">(</span><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">2025-04-11</span><span class="kw" style="color: #003B4F;
+font-style: inherit;">2025-06-13</span><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">)</span> <span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">--</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"How About a Twenty-Six"</span></span>
+font-style: inherit;">"Great Square Root"</span></span>
 <span id="cb5-6"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">Copyright</span> <span class="er" style="color: #AD0000;
@@ -229,7 +229,7 @@ font-style: inherit;">Platform:</span> x86_64-pc-linux-gnu</span></code></pre></
 </section>
 <section id="installation-has-been-well-validated" class="level2">
 <h2 class="anchored" data-anchor-id="installation-has-been-well-validated">Installation has been well validated</h2>
-<p>Just as with previous versions of R available via the <a href="https://wynton.ucsf.edu/hpc/software/software-repositories.html#repository_cbi">CBI</a> stack, I have validated that nearly all R packages on <a href="https://cran.r-project.org">CRAN</a> and <a href="https://www.bioconductor.org">Bioconductor</a> can be installed out of the box using this new R 4.5.0 installation.</p>
+<p>Just as with previous versions of R available via the <a href="https://wynton.ucsf.edu/hpc/software/software-repositories.html#repository_cbi">CBI</a> stack, I have validated that nearly all R packages on <a href="https://cran.r-project.org">CRAN</a> and <a href="https://www.bioconductor.org">Bioconductor</a> can be installed out of the box using the R 4.5.0 installation.</p>
 <p>Specifically, I have confirmed that 22,582 (99.1%) out of 22,371<sup>1</sup> CRAN packages and 2,289 (99.2%) out of 2,308<sup>2</sup> Bioconductor 3.21 software<sup>3</sup> packages are straightforward to install. A small number of packages require some extra love - see our <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a> for guidance on installing those.</p>
 <p>The 47 CRAN and 19 Bioconductor software packages that failed to install do so either because they depend on a system library that is not available on the cluster, or because they have bugs preventing them from being installed out of the box.</p>
 <!--
@@ -256,7 +256,7 @@ Bioconductor packages that fail to install: [n=19] AneuFinder, BiGGR, BulkSignal
   <category>update</category>
   <category>r</category>
   <category>draft</category>
-  <guid>https://blog.wynton.ucsf.edu/posts/2025/10/r-4.5.0/</guid>
+  <guid>https://blog.wynton.ucsf.edu/posts/2025/10/r-4.5/</guid>
   <pubDate>Thu, 30 Oct 2025 00:00:00 GMT</pubDate>
 </item>
 </channel>
