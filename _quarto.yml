@@ -16,6 +16,9 @@ website:
   
     right:
       - about.qmd
+      - icon: house
+        href: https://wynton.ucsf.edu/hpc/
+        aria-label: "Wynton HPC website"
       - icon: github
         href: https://github.com/ucsf-wynton/wynton-blog
         aria-label: "Wynton Blog GitHub repository"
