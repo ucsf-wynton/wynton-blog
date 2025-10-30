@@ -27,7 +27,10 @@ website:
 
   repo-url: https://github.com/ucsf-wynton/wynton-blog
   repo-actions: [edit, source]
-  
+
+  google-analytics:
+    tracking-id: "UA-128646955-1"
+
 format:
   html:
     theme: cosmo
