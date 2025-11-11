@@ -17,6 +17,10 @@ div.quarto-post .listing-categories .listing-category {
   color: #444;
 }
 
+a.footnote-ref {
+  text-decoration: underline;
+}
+
 
 /*--------------------------------------------------------------*
  * Figures
