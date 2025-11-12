@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="The Wynton Team">
-<meta name="dcterms.date" content="2025-10-29">
+<meta name="author" content="Henrik Bengtsson">
+<meta name="dcterms.date" content="2025-10-30">
 
-<title>Welcome to the UCSF Wynton Blog – The UCSF Wynton Blog</title>
+<title>R 4.5.0 is Available – The UCSF Wynton Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -40,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../../site_libs/bootstrap/bootstrap-73227896da5829586eabd13c58d108d7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -71,21 +106,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-
-<script type="text/javascript">
-
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-128646955-1', 'auto');
-
-ga('send', {
-  hitType: 'pageview',
-  'anonymizeIp': true,
-});
-</script>
 <script id="quarto-axe-checker-options" type="text/plain">eyJvdXRwdXQiOiJjb25zb2xlIn0=</script>
+<meta name="quarto:status" content="draft">
 
 
 <link rel="stylesheet" href="../../../../assets/css/this_site.css">
@@ -94,7 +116,7 @@ ga('send', {
 <body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>Draft</div>
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -117,11 +139,6 @@ ga('send', {
 <span class="menu-text">Wynton HPC - UCSF Research Computing at Scale</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://wynton.ucsf.edu/hpc/"> <i class="bi bi-house" role="img" aria-label="Wynton HPC website">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/ucsf-wynton/wynton-blog"> <i class="bi bi-github" role="img" aria-label="Wynton Blog GitHub repository">
 </i> 
 <span class="menu-text"></span></a>
@@ -142,9 +159,12 @@ ga('send', {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Welcome to the UCSF Wynton Blog</h1>
+      <h1 class="title">R 4.5.0 is Available</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
+                <div class="quarto-category">software</div>
+                <div class="quarto-category">update</div>
+                <div class="quarto-category">r</div>
+                <div class="quarto-category">draft</div>
               </div>
                   </div>
   </div>
@@ -155,14 +175,14 @@ ga('send', {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>The Wynton Team </p>
+               <p>Henrik Bengtsson </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 29, 2025</p>
+        <p class="date">October 30, 2025</p>
       </div>
     </div>
     
@@ -181,12 +201,84 @@ ga('send', {
 
 
 
-<p>Welcome to the <strong>UCSF Wynton Blog</strong> – a space for sharing the insights that don’t quite fit within our rigorously vetted documentation. While the main <a href="https://wynton.ucsf.edu/hpc/index.html">Wynton website</a> will remain the authoritative source for policies, system specifications, and step-by-step instructions that we guarantee are accurate, this blog opens the door to ideas that are still taking shape: quick tips we’ve found handy, early drafts of tutorials, and “rough-edge” discoveries that can help you work smarter on the cluster before they’re polished enough for the official docs.</p>
-<p>We also hope this becomes a forum for the wider Wynton community. If your lab has devised a clever workflow, uncovered a gotcha, or mastered a third-party tool that others might find useful, we’d love to host your guest post. All articles will be labeled with the author and date so you can judge freshness and applicability, and we’ll revise or retire content as it matures – or if it proves wrong. Think of the blog as a living notebook: collaborative, occasionally messy, but always aimed at helping each other push research forward on Wynton. Dive in, share your expertise, and let’s grow together.</p>
+<div class="float-right-30">
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="Rlogo.svg" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="The R Logo"></p>
+</figure>
+</div>
+</div>
+<section id="tldr" class="level2">
+<h2 class="anchored" data-anchor-id="tldr">TL;DR</h2>
+<p>R 4.5.0 was released on 2025-04-11 and is now available on Wynton through the <a href="https://wynton.ucsf.edu/hpc/software/software-repositories.html#repository_cbi">CBI</a> software stack. I have validated that almost all CRAN and Bioconductor packages can be installed with this new version.</p>
+</section>
+<section id="using-r" class="level2">
+<h2 class="anchored" data-anchor-id="using-r">Using R</h2>
+<p>To use R 4.5.0, which is the new default version, load it as:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>{alice<span class="sc">@</span>dev3 <span class="sc">~</span>}<span class="sc">$</span> module load CBI r</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Then you can run R interactively from the terminal using:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>{alice<span class="sc">@</span>dev3 <span class="sc">~</span>}<span class="sc">$</span> R <span class="sc">--</span>quiet</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">getRversion</span>()</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">'4.5.0'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>To use R 4.5.0 in RStudio, just follow our <a href="https://wynton.ucsf.edu/hpc/howto/rstudio.html">RStudio documentation</a>.</p>
+</section>
+<section id="r-packages-must-be-re-installed" class="level2">
+<h2 class="anchored" data-anchor-id="r-packages-must-be-re-installed">R packages must be re-installed</h2>
+<p>As usual when we move to a new version (e.g.&nbsp;from R 4.4 to R 4.5), any R packages installed in the previous version (R 4.4) are <em>not</em> available in the new version (R 4.5). This is not the case when we move from one patch version to another, e.g.&nbsp;R 4.5.0 to R 4.5.1. With the release of R 4.5.0 we have to start from scratch and reinstall any packages we need. So, don’t be surprised when <code>library(dplyr)</code> gives an error on “there is no package called ‘dplyr’”. Also, when installing your first package in a new version of R, R asks:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">install.packages</span>(<span class="st">"dplyr"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Warning <span class="cf">in</span> <span class="fu">install.packages</span>(<span class="st">"dplyr"</span>) <span class="sc">:</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">'lib = "/wynton/home/cbi/shared/software/_rocky8/R-4.5.0-gcc13/lib64/R/library"'</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  is not writable</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>Would you like to use a personal library instead? (yes<span class="sc">/</span>No<span class="sc">/</span>cancel)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Answer <strong>yes</strong> to this and anything else that R asks you to confirm. Doing so will make sure you get a smooth ride when using R. This is all explained in our <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a>.</p>
+</section>
+<section id="conda-must-be-deactivated-when-using-this-r-installation" class="level2">
+<h2 class="anchored" data-anchor-id="conda-must-be-deactivated-when-using-this-r-installation">Conda must be deactivated when using this R installation</h2>
+<p>Conda does not play well with other software tools installed on the system, especially not with programming tools such as Python and R. From experience working with Wynton users, Conda causes more problems for users than any other software tool on Wynton. When it comes to R, having Conda activated when installing an R package causes that R package to depend on your personal Conda setup. If your Conda setup gets updated later on, which it will, there is a great risk some of your R packages break. You will get hard-to-troubleshoot, obscure “library” errors when you try to load those R packages. It is a very tedious task trying to figure out which R packages are affected, so they can be re-installed.</p>
+<p>In the past, <code>module load CBI r</code> would <em>warn</em> about these problems, if it detected that Conda is activated. However, some users did not understand the importance of that warning, and some users are unaware that they have Conda activated. Ignoring the warning had no immediate impact, which could lead users to think that “R seems to work fine with Conda.” Starting with R 4.5.0, <code>module load CBI r</code> will now give an <em>error</em> and refuse to load if Conda is activated, e.g.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">{alice@dev3</span> ~}$ module load CBI r</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Lmod</span> has detected the following error: Using the <span class="st">'r'</span> module when a Conda</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ex">environment</span> is active risks resulting in hard-to-troubleshoot errors due</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ex">to</span> library conflicts. Make sure to deactivate the currently active Conda</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="st">'base'</span> environment before loading this module, e.g. <span class="st">'conda deactivate'</span>.</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">{alice@dev3</span> ~}$ R <span class="at">--version</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="ex">-bash:</span> R: command not found</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If you experience this, follow the instructions in the error message and deactivate Conda first, then retry:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">{alice@dev3</span> ~}$ conda deactivate</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">{alice@dev3</span> ~}$ module load CBI r</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="ex">{alice@dev3</span> ~}$ R <span class="at">--version</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="ex">R</span> version 4.5.0 <span class="er">(</span><span class="ex">2025-04-11</span><span class="kw">)</span> <span class="ex">--</span> <span class="st">"How About a Twenty-Six"</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="ex">Copyright</span> <span class="er">(</span><span class="ex">C</span><span class="kw">)</span> <span class="ex">2025</span> The R Foundation for Statistical Computing</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="ex">Platform:</span> x86_64-pc-linux-gnu</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="installation-has-been-well-validated" class="level2">
+<h2 class="anchored" data-anchor-id="installation-has-been-well-validated">Installation has been well validated</h2>
+<p>Just as with previous versions of R available via the <a href="https://wynton.ucsf.edu/hpc/software/software-repositories.html#repository_cbi">CBI</a> stack, I have validated that nearly all R packages on <a href="https://cran.r-project.org">CRAN</a> and <a href="https://www.bioconductor.org">Bioconductor</a> can be installed out of the box using this new R 4.5.0 installation.</p>
+<p>Specifically, I have confirmed that 22,582 (99.1%) out of 22,371<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> CRAN packages and 2,289 (99.2%) out of 2,308<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Bioconductor 3.21 software<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> packages are straightforward to install. A small number of packages require some extra love - see our <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a> for guidance on installing those.</p>
+<p>The 47 CRAN and 19 Bioconductor software packages that failed to install do so either because they depend on a system library that is not available on the cluster, or because they have bugs preventing them from being installed out of the box.</p>
+<!--
+Results per 2025-04-27:
+
+CRAN packages that fail to install: [n=47] adea, bigrquerystorage, cbbinom, clrng, crumble, EMTscore, facmodTS, fangs, FIESTA, FIESTAutils, flint, fluidsynth, gdalraster, gpuR, graphpcor, hypergeo2, image.textlinedetector, interpolation, jack, minired, multibridge, OpenCL, opencv, PathwayVote, pcaL1, PCRA, PortfolioAnalytics, PortfolioOptim, qspray, RationalMatrix, ratioOfQsprays, Rcplex, RcppMeCab, RcppPlanc, resultant, revert, RmecabKo, ROI.plugin.cplex, ROI.plugin.symphony, ROracle, Rpoppler, RQuantLib, Rsymphony, rzmq, surveyvoi, symbolicQspray, weird
+
+Bioconductor packages that fail to install: [n=19] AneuFinder, BiGGR, BulkSignalR, ChemmineOB, cn.farms, CNEr, genoCN, gmapR, gpuMagic, graper, Harshlight, HilbertVisGUI, hypeR, PICS, PING, RbowtieCuda, rsbml, trigger, XNAString
+-->
 
 
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>CRAN: <code>nrow(available.packages(repos = "https://cran.r-project.org"))</code><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Bioconductor: <code>nrow(available.packages(repos = "https://bioconductor.org/packages/3.21/bioc"))</code><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>I only validated installation of <a href="https://bioconductor.org/packages/release/BiocViews.html#___Software">Bioconductor “software” packages</a>. There are also Bioconductor “annotation-data”, “experiment-data”, and “workflow” packages, which I assume will install out-of-the-box.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -592,4 +684,4 @@ ga('send', {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/ucsf-wynton/wynton-blog/edit/main/posts/2025/10/welcome/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ucsf-wynton/wynton-blog/blob/main/posts/2025/10/welcome/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/ucsf-wynton/wynton-blog/edit/main/posts/2025/10/r-4.5.0/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ucsf-wynton/wynton-blog/blob/main/posts/2025/10/r-4.5.0/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>

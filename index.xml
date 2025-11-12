@@ -9,8 +9,8 @@
 <link>https://blog.wynton.ucsf.edu/</link>
 <atom:link href="https://blog.wynton.ucsf.edu/index.xml" rel="self" type="application/rss+xml"/>
 <description>The UCSF Wynton Blog</description>
-<generator>quarto-1.8.25</generator>
-<lastBuildDate>Wed, 29 Oct 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.8.26</generator>
+<lastBuildDate>Wed, 29 Oct 2025 07:00:00 GMT</lastBuildDate>
 <item>
   <title>Welcome to the UCSF Wynton Blog</title>
   <dc:creator>The Wynton Team</dc:creator>
@@ -29,7 +29,7 @@
  ]]></description>
   <category>news</category>
   <guid>https://blog.wynton.ucsf.edu/posts/2025/10/welcome/</guid>
-  <pubDate>Wed, 29 Oct 2025 00:00:00 GMT</pubDate>
+  <pubDate>Wed, 29 Oct 2025 07:00:00 GMT</pubDate>
   <media:content url="https://blog.wynton.ucsf.edu/posts/2025/10/welcome/ucsf_wynton_logo-black-006699-left.png" medium="image" type="image/png" height="76" width="144"/>
 </item>
 <item>
@@ -246,7 +246,7 @@ Bioconductor packages that fail to install: [n=19] AneuFinder, BiGGR, BulkSignal
   <category>update</category>
   <category>r</category>
   <guid>https://blog.wynton.ucsf.edu/posts/2025/10/r-4.5/</guid>
-  <pubDate>Wed, 29 Oct 2025 00:00:00 GMT</pubDate>
+  <pubDate>Wed, 29 Oct 2025 07:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
