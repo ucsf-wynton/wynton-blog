@@ -187,26 +187,6 @@ ga('send', {
 
 
 </main> <!-- /main -->
-<!--
-    Until quarto adds role="doc-endnote" itself
-    Author: Henrik Bengtsson
-    Date: 2025-11-12
-  -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll('section[role="doc-endnotes"] ol > li').forEach(function (li) {
-    if (!li.hasAttribute("role")) {
-      li.setAttribute("role", "doc-endnote");
-    }
-  });
-
-  document.querySelectorAll('a.footnote-back').forEach(function (a) {
-    if (!a.hasAttribute("role")) {
-      a.setAttribute("role", "doc-backlink");
-    }
-  });
-});
-</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
