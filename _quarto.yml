@@ -41,7 +41,8 @@ format:
     - assets/css/this_site.css
     axe:
       output: console
-
+    include-after-body: patch-footnotes-aria.html
+    
 execute:
   freeze: auto
 
