@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-73227896da5829586eabd13c58d108d7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4d3d3db3d34fb5b72f11a4c6c70abd5f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -166,6 +166,26 @@ ga('send', {
 </div>
 </div>
  <!-- /main -->
+<!--
+    Until quarto adds role="doc-endnote" itself
+    Author: Henrik Bengtsson
+    Date: 2025-11-12
+  -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('section[role="doc-endnotes"] ol > li').forEach(function (li) {
+    if (!li.hasAttribute("role")) {
+      li.setAttribute("role", "doc-endnote");
+    }
+  });
+
+  document.querySelectorAll('a.footnote-back').forEach(function (a) {
+    if (!a.hasAttribute("role")) {
+      a.setAttribute("role", "doc-backlink");
+    }
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

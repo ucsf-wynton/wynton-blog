@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-73227896da5829586eabd13c58d108d7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4d3d3db3d34fb5b72f11a4c6c70abd5f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -232,7 +232,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bmV3cw==" data-listing-date-sort="1761721200000" data-listing-file-modified-sort="1761785917722" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="175">
+<div class="quarto-post image-right" data-index="0" data-categories="bmV3cw==" data-listing-date-sort="1761696000000" data-listing-file-modified-sort="1762988291176" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="175">
 <div class="thumbnail"><a href="./posts/2025/10/welcome/index.html" class="no-external">
 
 <img loading="lazy" src="./posts/2025/10/welcome/ucsf_wynton_logo-black-006699-left.png" class="thumbnail-image" alt="UCSF Wynton logo in black and teal, with logotype aligned left">
@@ -262,7 +262,7 @@ The Wynton Team
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="c29mdHdhcmUlMkN1cGRhdGUlMkNy" data-listing-date-sort="1761721200000" data-listing-file-modified-sort="1761782291993" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="768">
+<div class="quarto-post image-right" data-index="1" data-categories="c29mdHdhcmUlMkN1cGRhdGUlMkNy" data-listing-date-sort="1761696000000" data-listing-file-modified-sort="1762988291176" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="768">
 <div class="thumbnail"><a href="./posts/2025/10/r-4.5/index.html" class="no-external">
 
 <p class="card-img-top"><img src="posts/2025/10/r-4.5/Rlogo.svg" alt="The R Logo"  class="thumbnail-image card-img"/></p>
@@ -299,6 +299,26 @@ Henrik Bengtsson
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
+<!--
+    Until quarto adds role="doc-endnote" itself
+    Author: Henrik Bengtsson
+    Date: 2025-11-12
+  -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('section[role="doc-endnotes"] ol > li').forEach(function (li) {
+    if (!li.hasAttribute("role")) {
+      li.setAttribute("role", "doc-endnote");
+    }
+  });
+
+  document.querySelectorAll('a.footnote-back').forEach(function (a) {
+    if (!a.hasAttribute("role")) {
+      a.setAttribute("role", "doc-backlink");
+    }
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
