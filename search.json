@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Wynton HPC - UCSF Research Computing at Scale",
+    "section": "",
+    "text": "Wynton HPC is a large, shared high-performance compute (HPC) cluster underlying UCSF’s Research Computing Capability. Funded and administered cooperatively by UCSF campus IT and key research groups, it is available to all UCSF researchers, and consists of different profiles suited to various biomedical and health science computing needs. Researchers can participate using the “co-op” model of resource contribution and sharing.\nThe Wynton HPC environment is available for free to all UCSF researchers.\nFor more information, including how to join, please visit https://wynton.ucsf.edu/hpc/."
+  },
+  {
+    "objectID": "posts/2025/10/welcome/index.html",
+    "href": "posts/2025/10/welcome/index.html",
+    "title": "Welcome to the UCSF Wynton Blog",
+    "section": "",
+    "text": "Welcome to the UCSF Wynton Blog – a space for sharing the insights that don’t quite fit within our rigorously vetted documentation. While the main Wynton website will remain the authoritative source for policies, system specifications, and step-by-step instructions that we guarantee are accurate, this blog opens the door to ideas that are still taking shape: quick tips we’ve found handy, early drafts of tutorials, and “rough-edge” discoveries that can help you work smarter on the cluster before they’re polished enough for the official docs.\nWe also hope this becomes a forum for the wider Wynton community. If your lab has devised a clever workflow, uncovered a gotcha, or mastered a third-party tool that others might find useful, we’d love to host your guest post. All articles will be labeled with the author and date so you can judge freshness and applicability, and we’ll revise or retire content as it matures – or if it proves wrong. Think of the blog as a living notebook: collaborative, occasionally messy, but always aimed at helping each other push research forward on Wynton. Dive in, share your expertise, and let’s grow together."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The UCSF Wynton Blog",
+    "section": "",
+    "text": "Welcome to the UCSF Wynton Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nOct 29, 2025\n\n\nThe Wynton Team\n\n\n\n\n\n\n\n\n\n\n\n\nR 4.5 is Available\n\n\n\nsoftware\n\nupdate\n\nr\n\n\n\n\n\n\n\n\n\nOct 29, 2025\n\n\nHenrik Bengtsson\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "drafts.html",
     "href": "drafts.html",
     "title": "Blog Posts under Development (nothing to see)",
@@ -33,20 +54,6 @@
     "title": "Best Practices: How to Use BeeGFS Efficiently",
     "section": "How to avoid problem",
     "text": "How to avoid problem\nInstructions."
-  },
-  {
-    "objectID": "posts/2025/10/welcome/index.html",
-    "href": "posts/2025/10/welcome/index.html",
-    "title": "Welcome to the UCSF Wynton Blog",
-    "section": "",
-    "text": "Welcome to the UCSF Wynton Blog – a space for sharing the insights that don’t quite fit within our rigorously vetted documentation. While the main Wynton website will remain the authoritative source for policies, system specifications, and step-by-step instructions that we guarantee are accurate, this blog opens the door to ideas that are still taking shape: quick tips we’ve found handy, early drafts of tutorials, and “rough-edge” discoveries that can help you work smarter on the cluster before they’re polished enough for the official docs.\nWe also hope this becomes a forum for the wider Wynton community. If your lab has devised a clever workflow, uncovered a gotcha, or mastered a third-party tool that others might find useful, we’d love to host your guest post. All articles will be labeled with the author and date so you can judge freshness and applicability, and we’ll revise or retire content as it matures – or if it proves wrong. Think of the blog as a living notebook: collaborative, occasionally messy, but always aimed at helping each other push research forward on Wynton. Dive in, share your expertise, and let’s grow together."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "The UCSF Wynton Blog",
-    "section": "",
-    "text": "Welcome to the UCSF Wynton Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nOct 29, 2025\n\n\nThe Wynton Team\n\n\n\n\n\n\n\n\n\n\n\n\nR 4.5 is Available\n\n\n\nsoftware\n\nupdate\n\nr\n\n\n\n\n\n\n\n\n\nOct 29, 2025\n\n\nHenrik Bengtsson\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2025/10/r-4.5/index.html#tldr",
@@ -89,12 +96,5 @@
     "title": "R 4.5 is Available",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nCRAN: nrow(available.packages(repos = \"https://cran.r-project.org\"))↩︎\nBioconductor: nrow(available.packages(repos = \"https://bioconductor.org/packages/3.21/bioc\"))↩︎\nI only validated installation of Bioconductor “software” packages. There are also Bioconductor “annotation-data”, “experiment-data”, and “workflow” packages, which I assume will install out-of-the-box.↩︎\nThe package installation checks took several days (2025-04-27/2025-04-29) to complete.↩︎"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Wynton HPC - UCSF Research Computing at Scale",
-    "section": "",
-    "text": "Wynton HPC is a large, shared high-performance compute (HPC) cluster underlying UCSF’s Research Computing Capability. Funded and administered cooperatively by UCSF campus IT and key research groups, it is available to all UCSF researchers, and consists of different profiles suited to various biomedical and health science computing needs. Researchers can participate using the “co-op” model of resource contribution and sharing.\nThe Wynton HPC environment is available for free to all UCSF researchers.\nFor more information, including how to join, please visit https://wynton.ucsf.edu/hpc/."
   }
 ]

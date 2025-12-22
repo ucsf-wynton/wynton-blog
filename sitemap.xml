@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.wynton.ucsf.edu/drafts.html</loc>
-    <lastmod>2025-11-12T23:18:43.159Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.wynton.ucsf.edu/posts/2025/11/beegfs-best-practices/index.html</loc>
-    <lastmod>2025-11-12T23:18:43.163Z</lastmod>
+    <loc>https://blog.wynton.ucsf.edu/about.html</loc>
+    <lastmod>2025-12-22T22:35:51.861Z</lastmod>
   </url>
   <url>
     <loc>https://blog.wynton.ucsf.edu/posts/2025/10/welcome/index.html</loc>
-    <lastmod>2025-11-12T23:18:43.161Z</lastmod>
+    <lastmod>2025-12-22T22:35:51.867Z</lastmod>
   </url>
   <url>
     <loc>https://blog.wynton.ucsf.edu/index.html</loc>
-    <lastmod>2025-11-12T23:18:43.161Z</lastmod>
+    <lastmod>2025-12-22T22:35:51.866Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.wynton.ucsf.edu/drafts.html</loc>
+    <lastmod>2025-12-22T22:35:51.865Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blog.wynton.ucsf.edu/posts/2025/11/beegfs-best-practices/index.html</loc>
+    <lastmod>2025-12-22T22:35:51.868Z</lastmod>
   </url>
   <url>
     <loc>https://blog.wynton.ucsf.edu/posts/2025/10/r-4.5/index.html</loc>
-    <lastmod>2025-11-12T23:18:43.161Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blog.wynton.ucsf.edu/about.html</loc>
-    <lastmod>2025-11-12T23:18:43.153Z</lastmod>
+    <lastmod>2025-12-22T22:35:51.867Z</lastmod>
   </url>
 </urlset>
