@@ -77,6 +77,13 @@ install[^not-installed] do so either because they depend on a system
 library that is not available on the cluster, or because they have
 bugs preventing them from being installed out of the box.
 
+A nice side effect of this validation round is that it identified
+several third-party tools and libraries that were either missing or
+outdated on the cluster. As a result, a number of new [CBI] modules
+were added, and several existing ones were updated to more recent
+versions. This benefits everyone on Wynton, also those who do not use
+R.
+
 <!--
 Results per TBD:
 
