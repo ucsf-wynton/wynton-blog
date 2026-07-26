@@ -114,7 +114,7 @@ Just as with previous versions of R available via the [CBI] stack, I
 have validated that nearly all R packages on [CRAN] and [Bioconductor]
 can be installed out of the box using the R 4.5.0 installation.
 
-I have confirmed that 22,582 (99.1%) out of 22,371[^cran-count] CRAN
+I have confirmed that 22,371 (99.1%) out of 22,582[^cran-count] CRAN
 packages and 2,289 (99.2%) out of 2,308[^bioc-count] Bioconductor 3.21
 (2025-04-16) software[^bioc-software] packages are straightforward to
 install[^when]. A small number of packages require some extra love -
