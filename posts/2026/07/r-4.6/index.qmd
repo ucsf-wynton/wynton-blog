@@ -73,9 +73,9 @@ install[^when]. A small number of packages required some extra love -
 see our [R documentation] for guidance on installing those.
 
 The 46 CRAN and 5 Bioconductor software packages that failed to
-install do so either because they depend on a system library that is
-not available on the cluster, or because they have bugs preventing
-them from being installed out of the box.
+install[^not-installed] do so either because they depend on a system
+library that is not available on the cluster, or because they have
+bugs preventing them from being installed out of the box.
 
 <!--
 Results per TBD:
@@ -113,3 +113,16 @@ are also Bioconductor "annotation-data", "experiment-data", and
 
 [^when]: The package installation checks took several days to
 complete.
+
+[^not-installed]: The CRAN packages that were not installed are:
+'bigrquerystorage', 'bizdays', 'blosc', 'cbbinom', 'chomper', 'CMCMC',
+'cncaGUI', 'CVXR', 'designmatch', 'flint', 'fluidsynth',
+'GeneralizedUmatrixGPU', 'geozarr', 'ggsql', 'GreedyExperimentalDesign',
+'h5lite', 'hdf5lib', 'hypergeo2', 'minired', 'mos', 'multibridge',
+'multiscape', 'myTAI', 'OpenCL', 'opencv', 'OptimalRerandExpDesigns',
+'otinference', 'prioriactions', 'Rcplex', 'RcppMeCab', 'relations',
+'rib', 'rip.opencv', 'RmecabKo', 'ROI.plugin.cplex', 'ROracle',
+'roxigraph', 'Rpoppler', 'RQuantLib', 'Rtinycc', 'rzmq', 'sbw',
+'sparsediff', 'sparselu', 'Uno', and 'zarr'. The Bioconductor software
+packages that were not installed are: 'ChemmineOB',
+'MsBackendRawFileReader', 'NewWave', 'rawrr', and 'SharedObject'.
