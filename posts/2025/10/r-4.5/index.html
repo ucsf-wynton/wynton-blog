@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,16 @@
 
 <title>R 4.5 is Available – The UCSF Wynton Blog</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -70,15 +76,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../../images/favicon.ico" rel="icon">
 <script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/quarto-axe/axe.min.js"></script>
+<script src="../../../../site_libs/quarto-axe/axe-check.js" type="module"></script>
+<script id="quarto-axe-checker-options" type="text/plain">eyJvdXRwdXQiOiJjb25zb2xlIn0=</script>
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-5e8525aa37bc576bf3c5663dc0cfde9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-2ff1c4b07688a25f8e97efe820b82182.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -120,7 +128,6 @@ ga('send', {
   'anonymizeIp': true,
 });
 </script>
-<script id="quarto-axe-checker-options" type="text/plain">eyJvdXRwdXQiOiJjb25zb2xlIn0=</script>
 
 
 <link rel="stylesheet" href="../../../../assets/css/this_site.css">
@@ -274,7 +281,7 @@ ga('send', {
 <section id="installation-has-been-well-validated" class="level2">
 <h2 class="anchored" data-anchor-id="installation-has-been-well-validated">Installation has been well validated</h2>
 <p>Just as with previous versions of R available via the <a href="https://wynton.ucsf.edu/hpc/software/software-repositories.html#repository_cbi">CBI</a> stack, I have validated that nearly all R packages on <a href="https://cran.r-project.org">CRAN</a> and <a href="https://www.bioconductor.org">Bioconductor</a> can be installed out of the box using the R 4.5.0 installation.</p>
-<p>I have confirmed that 22,582 (99.1%) out of 22,371<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> CRAN packages and 2,289 (99.2%) out of 2,308<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Bioconductor 3.21 (2025-04-16) software<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> packages are straightforward to install<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>. A small number of packages require some extra love - see our <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a> for guidance on installing those.</p>
+<p>I have confirmed that 22,371 (99.1%) out of 22,582<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> CRAN packages and 2,289 (99.2%) out of 2,308<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Bioconductor 3.21 (2025-04-16) software<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> packages are straightforward to install<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>. A small number of packages require some extra love - see our <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a> for guidance on installing those.</p>
 <p>The 47 CRAN and 19 Bioconductor software packages that failed to install do so either because they depend on a system library that is not available on the cluster, or because they have bugs preventing them from being installed out of the box.</p>
 <!--
 Results per 2025-04-27:

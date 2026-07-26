@@ -9,8 +9,8 @@
 <link>https://blog.wynton.ucsf.edu/</link>
 <atom:link href="https://blog.wynton.ucsf.edu/index.xml" rel="self" type="application/rss+xml"/>
 <description>The UCSF Wynton Blog</description>
-<generator>quarto-1.8.26</generator>
-<lastBuildDate>Wed, 29 Oct 2025 07:00:00 GMT</lastBuildDate>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Wed, 29 Oct 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Welcome to the UCSF Wynton Blog</title>
   <dc:creator>The Wynton Team</dc:creator>
@@ -29,7 +29,7 @@
  ]]></description>
   <category>news</category>
   <guid>https://blog.wynton.ucsf.edu/posts/2025/10/welcome/</guid>
-  <pubDate>Wed, 29 Oct 2025 07:00:00 GMT</pubDate>
+  <pubDate>Wed, 29 Oct 2025 00:00:00 GMT</pubDate>
   <media:content url="https://blog.wynton.ucsf.edu/posts/2025/10/welcome/ucsf_wynton_logo-black-006699-left.png" medium="image" type="image/png" height="76" width="144"/>
 </item>
 <item>
@@ -219,7 +219,7 @@ font-style: inherit;">Platform:</span> x86_64-pc-linux-gnu</span></code></pre></
 <section id="installation-has-been-well-validated" class="level2">
 <h2 class="anchored" data-anchor-id="installation-has-been-well-validated">Installation has been well validated</h2>
 <p>Just as with previous versions of R available via the <a href="https://wynton.ucsf.edu/hpc/software/software-repositories.html#repository_cbi">CBI</a> stack, I have validated that nearly all R packages on <a href="https://cran.r-project.org">CRAN</a> and <a href="https://www.bioconductor.org">Bioconductor</a> can be installed out of the box using the R 4.5.0 installation.</p>
-<p>I have confirmed that 22,582 (99.1%) out of 22,371<sup>1</sup> CRAN packages and 2,289 (99.2%) out of 2,308<sup>2</sup> Bioconductor 3.21 (2025-04-16) software<sup>3</sup> packages are straightforward to install<sup>4</sup>. A small number of packages require some extra love - see our <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a> for guidance on installing those.</p>
+<p>I have confirmed that 22,371 (99.1%) out of 22,582<sup>1</sup> CRAN packages and 2,289 (99.2%) out of 2,308<sup>2</sup> Bioconductor 3.21 (2025-04-16) software<sup>3</sup> packages are straightforward to install<sup>4</sup>. A small number of packages require some extra love - see our <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a> for guidance on installing those.</p>
 <p>The 47 CRAN and 19 Bioconductor software packages that failed to install do so either because they depend on a system library that is not available on the cluster, or because they have bugs preventing them from being installed out of the box.</p>
 <!--
 Results per 2025-04-27:
@@ -246,7 +246,7 @@ Bioconductor packages that fail to install: [n=19] AneuFinder, BiGGR, BulkSignal
   <category>update</category>
   <category>r</category>
   <guid>https://blog.wynton.ucsf.edu/posts/2025/10/r-4.5/</guid>
-  <pubDate>Wed, 29 Oct 2025 07:00:00 GMT</pubDate>
+  <pubDate>Wed, 29 Oct 2025 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
