@@ -1,5 +1,6 @@
 BeeGFS
 Bengtsson
+Bioconductor
 CBI
 Conda
 GiB
@@ -14,7 +15,9 @@ cran
 dev
 dplyr
 dt
+futurize
 gpudev
+macOS
 overconsuming
 pdev
 pdt
