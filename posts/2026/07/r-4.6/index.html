@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Henrik Bengtsson">
+<meta name="dcterms.date" content="2026-07-28">
 
-<title>The UCSF Wynton Blog</title>
+<title>R 4.6 is Available – The UCSF Wynton Blog</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,32 +28,65 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/favicon.ico" rel="icon">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/quarto-axe/axe.min.js"></script>
-<script src="site_libs/quarto-axe/axe-check.js" type="module"></script>
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<link href="../../../../images/favicon.ico" rel="icon">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/quarto-axe/axe.min.js"></script>
+<script src="../../../../site_libs/quarto-axe/axe-check.js" type="module"></script>
 <script id="quarto-axe-checker-options" type="text/plain">eyJvdXRwdXQiOiJjb25zb2xlIn0=</script>
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2ff1c4b07688a25f8e97efe820b82182.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-2ff1c4b07688a25f8e97efe820b82182.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,35 +114,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
 <script type="text/javascript">
 
@@ -123,51 +129,22 @@ ga('send', {
 });
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
+<link rel="stylesheet" href="../../../../assets/css/this_site.css">
+</head>
 
-<link rel="stylesheet" href="assets/css/this_site.css">
-<link rel="alternate" type="application/rss+xml" title="The UCSF Wynton Blog" href="index.xml" data-external="1"></head>
-
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo.png" alt="Return to the Wynton Blog front page" class="navbar-logo light-content">
-    <img src="./images/logo.png" alt="Return to the Wynton Blog front page" class="navbar-logo dark-content">
+    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../../images/logo.png" alt="Return to the Wynton Blog front page" class="navbar-logo light-content">
+    <img src="../../../../images/logo.png" alt="Return to the Wynton Blog front page" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">The UCSF Wynton Blog</span>
     </a>
   </div>
@@ -178,7 +155,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../../../about.html"> 
 <span class="menu-text">Wynton HPC - UCSF Research Computing at Scale</span></a>
   </li>  
   <li class="nav-item compact">
@@ -192,7 +169,7 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img" aria-label="Wynton Blog RSS feed">
+    <a class="nav-link" href="../../../../index.xml"> <i class="bi bi-rss" role="img" aria-label="Wynton Blog RSS feed">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -206,140 +183,112 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">The UCSF Wynton Blog</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">R 4.6 is Available</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">software</div>
+                <div class="quarto-category">update</div>
+                <div class="quarto-category">r</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Henrik Bengtsson </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">July 28, 2026</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cg==">r <span class="quarto-category-count">(2)</span></div><div class="category" data-category="c29mdHdhcmU=">software <span class="quarto-category-count">(2)</span></div><div class="category" data-category="dXBkYXRl">update <span class="quarto-category-count">(2)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="c29mdHdhcmUlMkN1cGRhdGUlMkNy" data-listing-date-sort="1785196800000" data-listing-file-modified-sort="1785085758814" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
-<div class="thumbnail"><a href="./posts/2026/07/r-4.6/index.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="posts/2026/07/r-4.6/Rlogo.svg" alt="The R Logo"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2026/07/r-4.6/index.html" class="no-external">R 4.6 is Available</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('c29mdHdhcmU='); return false;">software</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dXBkYXRl'); return false;">update</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cg=='); return false;">r</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/2026/07/r-4.6/index.html" class="no-external">
-R 4.6.0 was released on 2026-04-24 and R 4.6.1 on 2026-06-24. Both are now available on Wynton through the CBI software stack. I have validated that almost all CRAN and…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/2026/07/r-4.6/index.html" class="no-external">
-<div class="listing-date">
-Jul 28, 2026
-</div>
-<div class="listing-author">
-Henrik Bengtsson
-</div>
-</a>
+<div class="float-right-30">
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="Rlogo.svg" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="The R Logo"></p>
+</figure>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="bmV3cw==" data-listing-date-sort="1761696000000" data-listing-file-modified-sort="1785085758812" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="175">
-<div class="thumbnail"><a href="./posts/2025/10/welcome/index.html" class="no-external">
+<section id="tldr" class="level2">
+<h2 class="anchored" data-anchor-id="tldr">TL;DR</h2>
+<p>R 4.6.0 was released on 2026-04-24 and R 4.6.1 on 2026-06-24. Both are now available on Wynton through the <a href="https://wynton.ucsf.edu/hpc/software/software-repositories.html#repository_cbi">CBI</a> software stack. I have validated that almost all CRAN and Bioconductor packages can be installed with this new version.</p>
+</section>
+<section id="using-r" class="level2">
+<h2 class="anchored" data-anchor-id="using-r">Using R</h2>
+<p>To use the latest R 4.6, which is the new default version, load it as:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>{alice<span class="sc">@</span>dev3 <span class="sc">~</span>}<span class="sc">$</span> module load CBI r</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Then you can run R interactively from the terminal using:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>{alice<span class="sc">@</span>dev3 <span class="sc">~</span>}<span class="sc">$</span> R <span class="sc">--</span>quiet</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">getRversion</span>()</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">'4.6.1'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>To use R 4.6 in RStudio, just follow our <a href="https://wynton.ucsf.edu/hpc/howto/rstudio.html">RStudio documentation</a>.</p>
+</section>
+<section id="r-packages-must-be-re-installed" class="level2">
+<h2 class="anchored" data-anchor-id="r-packages-must-be-re-installed">R packages must be re-installed</h2>
+<p>As usual when we move to a new version (e.g.&nbsp;from R 4.5 to R 4.6), any R packages installed in the previous version (R 4.5) are <em>not</em> available in the new version (R 4.6). This is not the case when we move from one patch version to another, e.g.&nbsp;R 4.6.0 to R 4.6.1. With the release of R 4.6.0 we have to start from scratch and reinstall any packages we need. So, don’t be surprised when <code>library(futurize)</code> gives an error on “there is no package called ‘futurize’”. Also, when installing your first package in a new version of R, R asks:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">install.packages</span>(<span class="st">"futurize"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Warning <span class="cf">in</span> <span class="fu">install.packages</span>(<span class="st">"futurize"</span>) <span class="sc">:</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">'lib = "/wynton/home/cbi/shared/software/_rocky8/R-4.6.1-gcc13/lib64/R/library"'</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  is not writable</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>Would you like to use a personal library instead? (yes<span class="sc">/</span>No<span class="sc">/</span>cancel)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Answer <strong>yes</strong> to this and anything else that R asks you to confirm. Doing so will make sure you get a smooth ride when using R. This is all explained in our <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a>.</p>
+</section>
+<section id="installation-has-been-well-validated" class="level2">
+<h2 class="anchored" data-anchor-id="installation-has-been-well-validated">Installation has been well validated</h2>
+<p>Just as with previous versions of R available via the <a href="https://wynton.ucsf.edu/hpc/software/software-repositories.html#repository_cbi">CBI</a> stack, I have validated that nearly all R packages on <a href="https://cran.r-project.org">CRAN</a> and <a href="https://www.bioconductor.org">Bioconductor</a> can be installed out of the box using the R 4.6.1 installation.</p>
+<p>I have confirmed that 24,348 (99.8%) out of 24,394<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> CRAN packages and 2,379 (99.8%) out of 2,384<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Bioconductor 3.23 (2026-04-29) software<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> packages are straightforward to install<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>. A small number of packages required some extra love - see our <a href="https://wynton.ucsf.edu/hpc/howto/r.html">R documentation</a> for guidance on installing those.</p>
+<p>The 46 CRAN and 5 Bioconductor software packages that failed to install do so either because they depend on a system library that is not available on the cluster, or because they have bugs preventing them from being installed out of the box.</p>
+<!--
+Results per TBD:
 
-<img loading="lazy" src="./posts/2025/10/welcome/ucsf_wynton_logo-black-006699-left.png" class="thumbnail-image" alt="UCSF Wynton logo in black and teal, with logotype aligned left">
+CRAN packages that fail to install: [n=29] bigrquerystorage, blosc, cbbinom, chomper, CMCMC, flint, fluidsynth, GeneralizedUmatrixGPU, geozarr, ggsql, GreedyExperimentalDesign, h5lite, hdf5lib, hypergeo2, minired, mos, multibridge, myTAI, opencv, OptimalRerandExpDesigns, rib, rip.opencv, roxigraph, Rtinycc, rzmq, sparsediff, sparselu, Uno, zarr
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2025/10/welcome/index.html" class="no-external">Welcome to the UCSF Wynton Blog</a>
-</h3>
-<div class="listing-categories">
+Bioconductor packages that fail to install: [n=0] none
 
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
+Packages explicitly skipped, because they require system libraries not
+available on the cluster, or are known to fail to build:
 
-</div>
-<div class="delink listing-description"><a href="./posts/2025/10/welcome/index.html" class="no-external">
-Welcome to the <strong>UCSF Wynton Blog</strong> – a space for sharing the insights that don’t quite fit within our rigorously vetted documentation. While the main Wynton website will remain…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/2025/10/welcome/index.html" class="no-external">
-<div class="listing-date">
-Oct 29, 2025
-</div>
-<div class="listing-author">
-The Wynton Team
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="c29mdHdhcmUlMkN1cGRhdGUlMkNy" data-listing-date-sort="1761696000000" data-listing-file-modified-sort="1785085758812" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="768">
-<div class="thumbnail"><a href="./posts/2025/10/r-4.5/index.html" class="no-external">
+CRAN: [n=17] bizdays, cncaGUI, CVXR, designmatch, multiscape, OpenCL, otinference, prioriactions, Rcplex, RcppMeCab, relations, RmecabKo, ROI.plugin.cplex, ROracle, Rpoppler, RQuantLib, sbw
 
-<p class="card-img-top"><img loading='lazy' src="posts/2025/10/r-4.5/Rlogo.svg" alt="The R Logo"  class="thumbnail-image card-img"/></p>
+Bioconductor: [n=5] ChemmineOB, MsBackendRawFileReader, NewWave, rawrr, SharedObject
+-->
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2025/10/r-4.5/index.html" class="no-external">R 4.5 is Available</a>
-</h3>
-<div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('c29mdHdhcmU='); return false;">software</div>
+</section>
 
-<div class="listing-category" onclick="window.quartoListingCategory('dXBkYXRl'); return false;">update</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('cg=='); return false;">r</div>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
-</div>
-<div class="delink listing-description"><a href="./posts/2025/10/r-4.5/index.html" class="no-external">
-R 4.5.0 was released on 2025-04-11 and R 4.5.1 on 2025-06-13. Both are now available on Wynton through the CBI software stack. I have validated that almost all CRAN and…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/2025/10/r-4.5/index.html" class="no-external">
-<div class="listing-date">
-Oct 29, 2025
-</div>
-<div class="listing-author">
-Henrik Bengtsson
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+<ol>
+<li id="fn1"><p>CRAN: <code>nrow(available.packages(repos = "https://cran.r-project.org"))</code><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Bioconductor: <code>nrow(available.packages(repos = "https://bioconductor.org/packages/3.23/bioc"))</code><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>I only validated installation of <a href="https://bioconductor.org/packages/release/BiocViews.html#___Software">Bioconductor “software” packages</a>. There are also Bioconductor “annotation-data”, “experiment-data”, and “workflow” packages, which I assume will install out-of-the-box.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>The package installation checks took several days to complete.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -745,4 +694,4 @@ Henrik Bengtsson
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/ucsf-wynton/wynton-blog/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ucsf-wynton/wynton-blog/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/ucsf-wynton/wynton-blog/edit/main/posts/2026/07/r-4.6/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ucsf-wynton/wynton-blog/blob/main/posts/2026/07/r-4.6/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
