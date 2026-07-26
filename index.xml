@@ -136,27 +136,6 @@ Bioconductor: [n=5] ChemmineOB, MsBackendRawFileReader, NewWave, rawrr, SharedOb
   <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>Welcome to the UCSF Wynton Blog</title>
-  <dc:creator>The Wynton Team</dc:creator>
-  <link>https://blog.wynton.ucsf.edu/posts/2025/10/welcome/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Welcome to the <strong>UCSF Wynton Blog</strong> – a space for sharing the insights that don’t quite fit within our rigorously vetted documentation. While the main <a href="https://wynton.ucsf.edu/hpc/index.html">Wynton website</a> will remain the authoritative source for policies, system specifications, and step-by-step instructions that we guarantee are accurate, this blog opens the door to ideas that are still taking shape: quick tips we’ve found handy, early drafts of tutorials, and “rough-edge” discoveries that can help you work smarter on the cluster before they’re polished enough for the official docs.</p>
-<p>We also hope this becomes a forum for the wider Wynton community. If your lab has devised a clever workflow, uncovered a gotcha, or mastered a third-party tool that others might find useful, we’d love to host your guest post. All articles will be labeled with the author and date so you can judge freshness and applicability, and we’ll revise or retire content as it matures – or if it proves wrong. Think of the blog as a living notebook: collaborative, occasionally messy, but always aimed at helping each other push research forward on Wynton. Dive in, share your expertise, and let’s grow together.</p>
-
-
-
- ]]></description>
-  <category>news</category>
-  <guid>https://blog.wynton.ucsf.edu/posts/2025/10/welcome/</guid>
-  <pubDate>Wed, 29 Oct 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://blog.wynton.ucsf.edu/posts/2025/10/welcome/ucsf_wynton_logo-black-006699-left.png" medium="image" type="image/png" height="76" width="144"/>
-</item>
-<item>
   <title>R 4.5 is Available</title>
   <dc:creator>Henrik Bengtsson</dc:creator>
   <link>https://blog.wynton.ucsf.edu/posts/2025/10/r-4.5/</link>
@@ -371,6 +350,27 @@ Bioconductor packages that fail to install: [n=19] AneuFinder, BiGGR, BulkSignal
   <category>r</category>
   <guid>https://blog.wynton.ucsf.edu/posts/2025/10/r-4.5/</guid>
   <pubDate>Wed, 29 Oct 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Welcome to the UCSF Wynton Blog</title>
+  <dc:creator>The Wynton Team</dc:creator>
+  <link>https://blog.wynton.ucsf.edu/posts/2025/10/welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Welcome to the <strong>UCSF Wynton Blog</strong> – a space for sharing the insights that don’t quite fit within our rigorously vetted documentation. While the main <a href="https://wynton.ucsf.edu/hpc/index.html">Wynton website</a> will remain the authoritative source for policies, system specifications, and step-by-step instructions that we guarantee are accurate, this blog opens the door to ideas that are still taking shape: quick tips we’ve found handy, early drafts of tutorials, and “rough-edge” discoveries that can help you work smarter on the cluster before they’re polished enough for the official docs.</p>
+<p>We also hope this becomes a forum for the wider Wynton community. If your lab has devised a clever workflow, uncovered a gotcha, or mastered a third-party tool that others might find useful, we’d love to host your guest post. All articles will be labeled with the author and date so you can judge freshness and applicability, and we’ll revise or retire content as it matures – or if it proves wrong. Think of the blog as a living notebook: collaborative, occasionally messy, but always aimed at helping each other push research forward on Wynton. Dive in, share your expertise, and let’s grow together.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://blog.wynton.ucsf.edu/posts/2025/10/welcome/</guid>
+  <pubDate>Tue, 28 Oct 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://blog.wynton.ucsf.edu/posts/2025/10/welcome/ucsf_wynton_logo-black-006699-left.png" medium="image" type="image/png" height="76" width="144"/>
 </item>
 </channel>
 </rss>
