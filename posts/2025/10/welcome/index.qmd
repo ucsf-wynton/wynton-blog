@@ -1,7 +1,7 @@
 ---
 title: "Welcome to the UCSF Wynton Blog"
 author: "The Wynton Team"
-date: "2025-10-29"
+date: "2025-10-28"
 categories: [news]
 image: "ucsf_wynton_logo-black-006699-left.png"
 image-alt: "UCSF Wynton logo in black and teal, with logotype aligned left"
