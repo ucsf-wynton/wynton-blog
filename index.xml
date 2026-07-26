@@ -10,7 +10,7 @@
 <atom:link href="https://blog.wynton.ucsf.edu/index.xml" rel="self" type="application/rss+xml"/>
 <description>The UCSF Wynton Blog</description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Tue, 28 Jul 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 26 Jul 2026 00:00:00 GMT</lastBuildDate>
 <item>
   <title>R 4.6 is Available</title>
   <dc:creator>Henrik Bengtsson</dc:creator>
@@ -132,7 +132,7 @@ Bioconductor: [n=5] ChemmineOB, MsBackendRawFileReader, NewWave, rawrr, SharedOb
   <category>update</category>
   <category>r</category>
   <guid>https://blog.wynton.ucsf.edu/posts/2026/07/r-4.6/</guid>
-  <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+  <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Welcome to the UCSF Wynton Blog</title>
